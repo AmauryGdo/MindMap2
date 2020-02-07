@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#A9B7BF"
+    android:background="#ecf0f1"
     tools:context=".MainActivity"
     tools:layout_editor_absoluteY="25dp">
 
@@ -12,12 +12,12 @@
     <Button
         android:id="@+id/boutonMem"
         android:layout_width="231dp"
-        android:layout_height="86dp"
+        android:layout_height="82dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="50dp"
-        android:background="#FFFF6B"
+        android:background="#3498db"
         android:cursorVisible="false"
         android:text="Commencer à mémoriser"
         android:textAppearance="@android:style/TextAppearance.Material.WindowTitle"
@@ -31,23 +31,23 @@
 
     <Button
         android:id="@+id/infor"
-        android:layout_width="229dp"
-        android:layout_height="93dp"
+        android:layout_width="233dp"
+        android:layout_height="75dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:background="#FFFF6B"
+        android:background="#3498db"
         android:text="Information"
         android:textAppearance="@android:style/TextAppearance.Material.Widget.ActionBar.Title"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.973" />
+        app:layout_constraintVertical_bias="0.875" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="246dp"
-        android:layout_height="176dp"
+        android:layout_width="255dp"
+        android:layout_height="271dp"
         android:layout_marginStart="50dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="51dp"
@@ -56,9 +56,9 @@
         android:cropToPadding="false"
         app:layout_constraintBottom_toTopOf="@+id/boutonMem"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.28"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/logoprincip" />
 </android.support.constraint.ConstraintLayout>

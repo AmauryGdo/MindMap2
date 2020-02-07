@@ -58,13 +58,12 @@
         android:layout_width="43dp"
         android:layout_height="91dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.783"
         app:layout_constraintStart_toEndOf="@+id/frig1"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.225">
+        app:layout_constraintVertical_bias="0.525">
 
     </RelativeLayout>
 
@@ -108,11 +107,10 @@
         android:layout_height="60dp"
         android:layout_marginTop="60dp"
         android:layout_marginEnd="216dp"
-        android:layout_marginRight="216dp"
         android:layout_marginBottom="145dp"
         app:layout_constraintBottom_toTopOf="@+id/chat1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.982"
         app:layout_constraintStart_toEndOf="@+id/frig1"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.3">
