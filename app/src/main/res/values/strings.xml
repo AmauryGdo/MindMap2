@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">test</string>
+    <string name="title_activity_salon">salon</string>
+    <string name="title_activity_jardin">jardin</string>
+    <string name="title_activity_texte">texte</string>
+    <string name="title_activity_ecrire">Ecrire</string>
+    <string name="title_activity_salledebain">salledebain</string>
+</resources>
