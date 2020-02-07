@@ -55,6 +55,8 @@ public class cuisine extends AppCompatActivity {
                  startActivity(i);
              }
          });
+
+
          fenetre= findViewById(R.id.fenetre1);
          fenetre.setOnClickListener(new OnClickListener() {
              @Override
