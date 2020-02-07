@@ -14,6 +14,8 @@ public class MainActivity extends AppCompatActivity {
     private Button info;
     // Ici est dans le menu d'acceuil qui contient deux boutons. Le bouton mem qui mène au choix des pièces et le bouton info pour la description de l'appli
 
+    // ceommentaire
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
