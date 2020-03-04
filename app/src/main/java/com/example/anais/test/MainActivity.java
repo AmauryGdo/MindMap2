@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+        // ajou du bouton memo
             memo = findViewById(R.id.boutonMem);
             // monBouton.setText("Valisez");
             memo.setOnClickListener(new View.OnClickListener() {
