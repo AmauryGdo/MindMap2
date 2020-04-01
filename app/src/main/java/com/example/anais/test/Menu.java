@@ -16,7 +16,7 @@ import android.widget.ImageButton;
 
 public class Menu extends AppCompatActivity {
     //Création varaibles Image Bouton
-    private ImageButton chambre;
+    private ImageButton chambre_;  // pour mieux comprendre un truc
     private ImageButton salledebain;
     private ImageButton cuisine;
     private ImageButton jeu;
@@ -37,9 +37,9 @@ public class Menu extends AppCompatActivity {
                 setContentView(R.layout.menu_verti);
 
 
-                chambre = findViewById(R.id.chambre);
+                chambre_ = findViewById(R.id.chambre);
                 // monBouton.setText("Valisez");
-                chambre.setOnClickListener(new View.OnClickListener() {
+                chambre_.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         visualiser_la_suite();
@@ -95,9 +95,9 @@ public class Menu extends AppCompatActivity {
                 setContentView(R.layout.menu_paysage);
 
 
-                chambre = findViewById(R.id.chambre);
+                chambre_ = findViewById(R.id.chambre);
                 // monBouton.setText("Valisez");
-                chambre.setOnClickListener(new View.OnClickListener() {
+                chambre_.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         visualiser_la_suite();

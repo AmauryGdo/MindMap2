@@ -7,7 +7,7 @@
     tools:context=".information">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageinformation"
         android:layout_width="453dp"
         android:layout_height="768dp"
         app:layout_constraintBottom_toBottomOf="parent"
