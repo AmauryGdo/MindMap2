@@ -9,7 +9,7 @@
         android:roundIcon="@drawable/logoprincip"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".menu_paysage"  android:configChanges="orientation|screenSize|screenLayout|keyboardHidden">
+        <activity android:name=".MenuPrincipal"  android:configChanges="orientation|screenSize|screenLayout|keyboardHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,7 +24,7 @@
         <activity android:name=".MainActivity">
 
         </activity>
-        <activity android:name=".Choixpiece" />
+        <activity android:name=".Menu" />
         <activity android:name=".information" />
         <activity android:name=".Chambre" />
         <activity android:name=".cuisine" />

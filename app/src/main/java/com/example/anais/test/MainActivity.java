@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 
 // Il y a beaucoup de répétition dans notre code j'ai donc choisi de commenter Chambre, Main Activité, Choix Pièce et Ecrire
 public class MainActivity extends AppCompatActivity {
@@ -40,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void visualiser_la_suite()
     {
-        Intent intent = new Intent( MainActivity.this, Choixpiece.class);
+        Intent intent = new Intent( MainActivity.this, Menu.class);
         startActivity(intent);
 
 

@@ -49,7 +49,7 @@ public class Ecrire extends AppCompatActivity{
                 // on sauvegarde le texte dans sharedPreferences
                 sharedPreferences.edit().putString(nomObjet, texte.getText().toString()).apply();
                 //finish();
-                Intent intent = new Intent(Ecrire.this, Choixpiece.class); // et on revient au menu
+                Intent intent = new Intent(Ecrire.this, Menu.class); // et on revient au menu
                 startActivity(intent);
             }
         });
@@ -61,7 +61,7 @@ public class Ecrire extends AppCompatActivity{
     /*
 private void visualiser_la_suite()
 {
-    Intent intent = new Intent(this, Choixpiece.class);
+    Intent intent = new Intent(this, Menu.class);
     startActivity(intent);
 
 }

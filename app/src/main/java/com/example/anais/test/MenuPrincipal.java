@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-public class menu_paysage extends AppCompatActivity {
+public class MenuPrincipal extends AppCompatActivity {
     // définition variable de type bouton
     private ImageButton memo;
     private Button info;
@@ -18,7 +18,7 @@ public class menu_paysage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // setContentView(R.layout.menu_paysage);
+        // setContentView(R.layout.MenuPrincipal);
 
 
         switch (getResources().getConfiguration().orientation) {
@@ -84,7 +84,7 @@ public class menu_paysage extends AppCompatActivity {
 
     private void visualiser_la_suite()
     {
-        Intent intent = new Intent(menu_paysage.this, Chambre.class);
+        Intent intent = new Intent(MenuPrincipal.this, Chambre.class);
         startActivity(intent);
 
     }
@@ -92,14 +92,14 @@ public class menu_paysage extends AppCompatActivity {
 
     private void visualiser_la_suite2()
     {
-        Intent intent2= new Intent(menu_paysage.this, cuisine.class);
+        Intent intent2= new Intent(MenuPrincipal.this, cuisine.class);
         startActivity(intent2);
     }
 
 
     private void visualiser_la_suite3()
     {
-        Intent intent = new Intent(menu_paysage.this, jardin.class);
+        Intent intent = new Intent(MenuPrincipal.this, jardin.class);
         startActivity(intent);
 
 

@@ -20,5 +20,34 @@
         android:id="@+id/jeu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:scaleType="fitXY"
         app:srcCompat="@drawable/jeu" />
+
+    <ImageButton
+        android:id="@+id/cuisine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/logocuisine" />
+
+    <ImageButton
+        android:id="@+id/salon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/logosalon" />
+
+    <ImageButton
+        android:id="@+id/salledebain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/salledebain" />
+
+    <ImageButton
+        android:id="@+id/jardin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/logojardin" />
 </android.support.v7.widget.GridLayout>
