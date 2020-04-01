@@ -84,15 +84,31 @@ public class menu_paysage extends AppCompatActivity {
 
     private void visualiser_la_suite()
     {
-        Intent intent = new Intent(menu_paysage.this, Choixpiece.class);
+        Intent intent = new Intent(menu_paysage.this, Chambre.class);
+        startActivity(intent);
+
+    }
+
+
+    private void visualiser_la_suite2()
+    {
+        Intent intent2= new Intent(menu_paysage.this, cuisine.class);
+        startActivity(intent2);
+    }
+
+
+    private void visualiser_la_suite3()
+    {
+        Intent intent = new Intent(menu_paysage.this, jardin.class);
         startActivity(intent);
 
 
 
     }
-    private void visualiser_la_suite2()
-    {
-        Intent intent2= new Intent(menu_paysage.this, information.class);
-        startActivity(intent2);
-    }
+
+
+
+
+
+
 }
