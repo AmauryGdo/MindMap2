@@ -45,7 +45,7 @@ public class menu_paysage extends AppCompatActivity {
 
             case Configuration.ORIENTATION_LANDSCAPE:
                 setContentView(R.layout.menu_paysage);
-                memo = findViewById(R.id.boutonMem);
+                memo = findViewById(R.id.chambre);
                 // monBouton.setText("Valisez");
                 memo.setOnClickListener(new View.OnClickListener() {
                     @Override
