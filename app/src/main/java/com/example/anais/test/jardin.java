@@ -47,14 +47,14 @@ public class jardin extends AppCompatActivity {
 
         table= findViewById(R.id.table);
         table.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v){
-            Intent i = new Intent(jardin.this, Ecrire.class);
-            i.putExtra("objetclique", "table"); //Optional parameters
-            startActivity(i);
+            @Override
+            public void onClick(View v){
+                Intent i = new Intent(jardin.this, Ecrire.class);
+                i.putExtra("objetclique", "table"); //Optional parameters
+                startActivity(i);
 
-        }
-    });
+            }
+        });
         hamac= findViewById(R.id.hamac);
         hamac.setOnClickListener(new View.OnClickListener() {
             @Override

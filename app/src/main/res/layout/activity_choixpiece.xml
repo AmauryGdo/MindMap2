@@ -9,8 +9,8 @@
 
     <ImageButton
         android:id="@+id/logochambre"
-        android:layout_width="194dp"
-        android:layout_height="195dp"
+        android:layout_width="170dp"
+        android:layout_height="162dp"
         android:layout_marginTop="292dp"
         android:background="#A9B7BF"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,11 +46,10 @@
 
     <ImageButton
         android:id="@+id/logocuisine"
-        android:layout_width="196dp"
-        android:layout_height="200dp"
-        android:layout_marginStart="11dp"
-        android:layout_marginLeft="11dp"
-        android:layout_marginBottom="48dp"
+        android:layout_width="187dp"
+        android:layout_height="184dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:background="#A9B7BF"
         app:layout_constraintBottom_toTopOf="@+id/logojeu"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,8 +57,8 @@
 
     <ImageButton
         android:id="@+id/logojardin"
-        android:layout_width="187dp"
-        android:layout_height="183dp"
+        android:layout_width="166dp"
+        android:layout_height="162dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="20dp"
         android:background="#A9B7BF"
@@ -71,11 +70,11 @@
 
     <ImageButton
         android:id="@+id/logojeu"
-        android:layout_width="226dp"
-        android:layout_height="195dp"
-        android:layout_marginEnd="2dp"
-        android:layout_marginRight="2dp"
-        android:layout_marginBottom="6dp"
+        android:layout_width="163dp"
+        android:layout_height="135dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="16dp"
         android:background="#A9B7BF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/logojardin"

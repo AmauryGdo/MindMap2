@@ -13,11 +13,11 @@ import android.widget.TextView;
 //Nous sommes dans l'activité qui permet à l'utilisateur de saisir le texte qu'il veut faire mémoriser dans un objet
 public class Ecrire extends AppCompatActivity{
     // Définition des variables
-private Button boutonRetour;
-TextView origine;
-EditText texte;
-String nomObjet;
-SharedPreferences sharedPreferences;
+    private Button boutonRetour;
+    TextView origine;
+    EditText texte;
+    String nomObjet;
+    SharedPreferences sharedPreferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,13 +34,13 @@ SharedPreferences sharedPreferences;
         Bundle extras = getIntent().getExtras();
         if(extras != null)
         { nomObjet= extras.getString("objetclique"); // on stocke la valeur envoyée dans une variable nomObjet
-        origine.setText("Vous enregistrez dans l'objet:"+nomObjet); //On affiche que le texte est bien mémorisé dans l'objet cliqué
-        if(sharedPreferences.contains(nomObjet)){  //condition vérifiant si une donnée a déjà été stockée
-            String textememorise = sharedPreferences.getString(nomObjet, null);
-            System.out.println(textememorise);
-        texte.setText(textememorise);
+            origine.setText("Vous enregistrez dans l'objet:"+nomObjet); //On affiche que le texte est bien mémorisé dans l'objet cliqué
+            if(sharedPreferences.contains(nomObjet)){  //condition vérifiant si une donnée a déjà été stockée
+                String textememorise = sharedPreferences.getString(nomObjet, null);
+                System.out.println(textememorise);
+                texte.setText(textememorise);
 
-        }
+            }
 
         }
         boutonRetour.setOnClickListener(new OnClickListener() {
@@ -54,7 +54,7 @@ SharedPreferences sharedPreferences;
             }
         });
 
-}
+    }
 
 }
 

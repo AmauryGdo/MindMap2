@@ -1,97 +1,62 @@
 package com.example.anais.test;
 
 import android.content.Intent;
-import android.content.res.Configuration;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.widget.Button;
+import android.widget.RelativeLayout;
 
-public class menu_paysage extends AppCompatActivity {
-    // définition variable de type bouton
-    private Button memo;
-    private Button info;
-    // Ici est dans le menu d'acceuil qui contient deux boutons. Le bouton mem qui mène au choix des pièces et le bouton info pour la description de l'appli
+import java.util.HashMap;
 
-
+//Nous sommes dans le salon avec 3 zones clicables
+// Il y a beaucoup de répétition dans notre code j'ai donc choisi de commenter Chambre, Main Activité, Choix Pièce et Ecrire
+public class salledebain extends AppCompatActivity {
+    private RelativeLayout lavabo;
+    private RelativeLayout corbeille2;
+    private RelativeLayout baignoire;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // setContentView(R.layout.menu_paysage);
+        setContentView(R.layout.activity_salledebain);
 
+        lavabo= findViewById(R.id.lavabo);
+        lavabo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                Intent i = new Intent(salledebain.this, Ecrire.class);
+                i.putExtra("objetclique", "lavabo"); //Optional parameters
+                startActivity(i);
 
-        switch (getResources().getConfiguration().orientation) {
-            case Configuration.ORIENTATION_PORTRAIT:
-                setContentView(R.layout.menu_verti);
-                memo = findViewById(R.id.boutonMem);
-                // monBouton.setText("Valisez");
-                memo.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        visualiser_la_suite();
+            }
+        });
 
-                    }
-                });
+        baignoire= findViewById(R.id.baignoire);
+        baignoire.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                Intent i = new Intent(salledebain.this, Ecrire.class);
+                i.putExtra("objetclique", "baignoire"); //Optional parameters
+                startActivity(i);
 
-                info= findViewById(R.id.infor);
-                info.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        visualiser_la_suite2();
-                    }
-                });
-                break;
+            }
+        });
 
-            case Configuration.ORIENTATION_LANDSCAPE:
-                setContentView(R.layout.menu_paysage);
-                memo = findViewById(R.id.boutonMem);
-                // monBouton.setText("Valisez");
-                memo.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        visualiser_la_suite();
+        corbeille2= findViewById(R.id.corbeille2);
+        corbeille2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                Intent i = new Intent(salledebain.this, Ecrire.class);
+                i.putExtra("objetclique", "corbeille2"); //Optional parameters
+                startActivity(i);
 
-                    }
-                });
-
-                info= findViewById(R.id.infor);
-                info.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        visualiser_la_suite2();
-                    }
-                });
-                break;
-        }
-    }
-
-
-   // protected void onConfigurationChanged (Bundle savedInstanceState) {
-
-    @Override
-    public void onConfigurationChanged(Configuration newConfig) {
-        super.onConfigurationChanged(newConfig);
-
-        // Checks the orientation of the screen
-        if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
-            setContentView(R.layout.menu_paysage);
-        } else if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT){
-            setContentView(R.layout.menu_verti);
-
-        }
-    }
-
-    private void visualiser_la_suite()
-    {
-        Intent intent = new Intent(menu_paysage.this, Choixpiece.class);
-        startActivity(intent);
+            }
+        });
 
 
 
     }
-    private void visualiser_la_suite2()
-    {
-        Intent intent2= new Intent(menu_paysage.this, information.class);
-        startActivity(intent2);
-    }
+
 }
