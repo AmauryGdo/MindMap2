@@ -6,10 +6,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class menu_paysage extends AppCompatActivity {
     // définition variable de type bouton
-    private Button memo;
+    private ImageButton memo;
     private Button info;
     // Ici est dans le menu d'acceuil qui contient deux boutons. Le bouton mem qui mène au choix des pièces et le bouton info pour la description de l'appli
 
@@ -23,7 +24,7 @@ public class menu_paysage extends AppCompatActivity {
         switch (getResources().getConfiguration().orientation) {
             case Configuration.ORIENTATION_PORTRAIT:
                 setContentView(R.layout.menu_verti);
-                memo = findViewById(R.id.boutonMem);
+                memo = findViewById(R.id.chambre);
                 // monBouton.setText("Valisez");
                 memo.setOnClickListener(new View.OnClickListener() {
                     @Override
