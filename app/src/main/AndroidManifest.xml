@@ -21,9 +21,6 @@
             android:label="@string/title_activity_salledebain"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Ecrire" />
-        <activity android:name=".MainActivity">
-
-        </activity>
         <activity android:name=".Menu" />
         <activity android:name=".information" />
         <activity android:name=".Chambre" />
