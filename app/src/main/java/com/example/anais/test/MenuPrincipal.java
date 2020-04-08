@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 
 public class MenuPrincipal extends AppCompatActivity {
     // définition variable de type bouton
@@ -82,7 +81,7 @@ public class MenuPrincipal extends AppCompatActivity {
     }
 
     private void visualiser_la_suite() {
-        Intent intent = new Intent(MenuPrincipal.this, Menu.class);
+        Intent intent = new Intent(MenuPrincipal.this, MenuSelection.class);
         startActivity(intent);
 
     }

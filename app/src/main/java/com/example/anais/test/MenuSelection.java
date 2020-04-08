@@ -14,7 +14,7 @@ import android.view.View;
 import android.widget.ImageButton;
 
 
-public class Menu extends AppCompatActivity {
+public class MenuSelection extends AppCompatActivity {
     //Création varaibles Image Bouton
     private ImageButton chambre_;  // pour mieux comprendre un truc
     private ImageButton salledebain;
@@ -34,7 +34,7 @@ public class Menu extends AppCompatActivity {
 
         switch (getResources().getConfiguration().orientation) {
             case Configuration.ORIENTATION_PORTRAIT:
-                setContentView(R.layout.menu_verti);
+                setContentView(R.layout.menu_selection_vertical);
 
 
                 chambre_ = findViewById(R.id.chambre);
@@ -92,7 +92,7 @@ public class Menu extends AppCompatActivity {
 
 
             case Configuration.ORIENTATION_LANDSCAPE:
-                setContentView(R.layout.menu_paysage);
+                setContentView(R.layout.menu_selection_horizontal);
 
 
                 chambre_ = findViewById(R.id.chambre);
@@ -157,9 +157,9 @@ public class Menu extends AppCompatActivity {
 
         // Checks the orientation of the screen
         if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
-            setContentView(R.layout.menu_paysage);
+            setContentView(R.layout.menu_selection_horizontal);
         } else if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
-            setContentView(R.layout.menu_verti);
+            setContentView(R.layout.menu_selection_vertical);
 
         }
     }
@@ -167,38 +167,38 @@ public class Menu extends AppCompatActivity {
 
     // creation de fonction visualiser la suite
     private void visualiser_la_suite() {
-        Intent intent = new Intent(Menu.this, Chambre.class);
+        Intent intent = new Intent(MenuSelection.this, Chambre.class);
         startActivity(intent);
 
     }
 
     private void visualiser_la_suite2() {
-        Intent intent = new Intent(Menu.this, cuisine.class);
+        Intent intent = new Intent(MenuSelection.this, cuisine.class);
         startActivity(intent);
 
     }
 
 
     private void visualiser_la_suite3() {
-        Intent intent = new Intent(Menu.this, jardin.class);
+        Intent intent = new Intent(MenuSelection.this, jardin.class);
         startActivity(intent);
 
     }
 
     private void visualiser_la_suite4() {
-        Intent intent = new Intent(Menu.this, jeu.class);
+        Intent intent = new Intent(MenuSelection.this, jeu.class);
         startActivity(intent);
 
     }
 
     private void visualiser_la_suite5() {
-        Intent intent = new Intent(Menu.this, salledebain.class);
+        Intent intent = new Intent(MenuSelection.this, salledebain.class);
         startActivity(intent);
 
     }
 
     private void visualiser_la_suite6() {
-        Intent intent = new Intent(Menu.this, salon.class);
+        Intent intent = new Intent(MenuSelection.this, salon.class);
         startActivity(intent);
 
     }
