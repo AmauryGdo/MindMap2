@@ -11,13 +11,14 @@ public class MenuPrincipal extends AppCompatActivity {
     // définition variable de type bouton
     private Button memo;
     private Button info;
+
     // Ici est dans le menu d'acceuil qui contient deux boutons. Le bouton mem qui mène au choix des pièces et le bouton info pour la description de l'appli
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // setContentView(R.layout.MenuPrincipal);
+        // setContentView(R.layout.MenuPrincipal);   // donner un layout au Menu Principal
 
 
         switch (getResources().getConfiguration().orientation) {
@@ -28,8 +29,7 @@ public class MenuPrincipal extends AppCompatActivity {
                 memo.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        visualiser_la_suite();
-                    }
+                        visualiser_la_suite(); }
                 });
 
                 info = findViewById(R.id.infor);
