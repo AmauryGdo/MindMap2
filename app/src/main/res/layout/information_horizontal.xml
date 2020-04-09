@@ -10,6 +10,7 @@
         android:id="@+id/imageinformation2"
         android:layout_width="562dp"
         android:layout_height="567dp"
+        android:contentDescription="@string/menuinfo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"

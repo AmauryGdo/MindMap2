@@ -11,4 +11,8 @@
     <string name="image">Image</string>
     <string name="commencer_memoriser">Commencer à memoriser</string>
     <string name="informations">Informations</string>
+    <string name="menuinfo">menuinfo</string>
+    <string name="imagesalon">imageSalon</string>
+    <string name="imagesdb">imagesdb</string>
+    <string name="imagejeu">imagejeu</string>
 </resources>

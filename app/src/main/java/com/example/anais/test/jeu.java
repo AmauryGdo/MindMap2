@@ -4,10 +4,8 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.RelativeLayout;
 
-import java.util.HashMap;
 // Il y a beaucoup de répétition dans notre code j'ai donc choisi de commenter Chambre, Main Activité, Choix Pièce et Ecrire
 public class jeu extends AppCompatActivity {
     //définition des variables
@@ -21,7 +19,7 @@ public class jeu extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_jeu);
+        setContentView(R.layout.jeu_vertical);
 
         guitare= findViewById(R.id.guitare);
         guitare.setOnClickListener(new View.OnClickListener() {
