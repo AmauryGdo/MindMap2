@@ -4,17 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#A9B7BF">
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="77dp"
-        android:layout_marginTop="32dp"
-        android:text="VERTICAL"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    android:background="#FFFFFF">
 
     <Button
         android:id="@+id/boutonMem"
@@ -26,15 +16,14 @@
         android:layout_marginBottom="50dp"
         android:background="#FFFF6B"
         android:cursorVisible="false"
-        android:text="Commencer à mémoriser"
+        android:text="@string/commencer_m_moriser"
         android:textAppearance="@android:style/TextAppearance.Material.WindowTitle"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.71" />
+        app:layout_constraintVertical_bias="0.663" />
 
     <Button
         android:id="@+id/infor"
@@ -43,27 +32,29 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:background="#FFFF6B"
-        android:text="Information"
+        android:text="@string/information"
         android:textAppearance="@android:style/TextAppearance.Material.Widget.ActionBar.Title"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.852" />
+        app:layout_constraintVertical_bias="0.816" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="252dp"
+        android:layout_height="247dp"
         android:layout_marginStart="50dp"
         android:layout_marginTop="78dp"
         android:layout_marginEnd="51dp"
         android:layout_marginBottom="343dp"
         android:adjustViewBounds="false"
+        android:contentDescription="@string/Image"
         android:cropToPadding="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.301"
         app:srcCompat="@drawable/logoprincip" />
 </android.support.constraint.ConstraintLayout>

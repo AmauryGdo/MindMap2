@@ -4,27 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#A9B7BF">
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="84dp"
-        android:layout_marginTop="64dp"
-        android:text="HORIZONTAL"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    android:background="#FFFFFF">
 
     <Button
         android:id="@+id/infor"
-        android:layout_width="183dp"
+        android:layout_width="200dp"
         android:layout_height="64dp"
         android:layout_marginStart="397dp"
         android:layout_marginTop="296dp"
-        android:layout_marginEnd="151dp"
+        android:layout_marginEnd="140dp"
         android:layout_marginBottom="51dp"
-        android:text="Informations"
+        android:text="@string/informations"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,13 +22,13 @@
 
     <Button
         android:id="@+id/boutonMem"
-        android:layout_width="201dp"
+        android:layout_width="200dp"
         android:layout_height="64dp"
-        android:layout_marginStart="139dp"
+        android:layout_marginStart="140dp"
         android:layout_marginTop="296dp"
         android:layout_marginEnd="391dp"
         android:layout_marginBottom="51dp"
-        android:text="Commencer à memoriser"
+        android:text="@string/commencer_memoriser"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -53,6 +43,7 @@
         android:layout_marginEnd="245dp"
         android:layout_marginBottom="131dp"
         android:adjustViewBounds="false"
+        android:contentDescription="@string/image"
         android:cropToPadding="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

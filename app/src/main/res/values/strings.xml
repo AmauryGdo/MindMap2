@@ -5,4 +5,10 @@
     <string name="title_activity_texte">texte</string>
     <string name="title_activity_ecrire">Ecrire</string>
     <string name="title_activity_salledebain">salledebain</string>
+    <string name="commencer_m_moriser">Commencer à mémoriser</string>
+    <string name="information">Information</string>
+    <string name="Image">TODO</string>
+    <string name="image">Image</string>
+    <string name="commencer_memoriser">Commencer à memoriser</string>
+    <string name="informations">Informations</string>
 </resources>
