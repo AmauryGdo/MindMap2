@@ -32,7 +32,7 @@
         android:layout_width="139dp"
         android:layout_height="132dp"
         android:scaleType="fitXY"
-        app:layout_column="2"
+        app:layout_column="5"
         app:layout_row="4"
         app:srcCompat="@drawable/logosalon" />
 
