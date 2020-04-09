@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
 
-import java.util.HashMap;
 // Il y a beaucoup de répétition dans notre code j'ai donc choisi de commenter Chambre, Main Activité, Choix Pièce et Ecrire
 public class Chambre extends AppCompatActivity {
     //Déclaration des variables
@@ -17,7 +16,7 @@ public class Chambre extends AppCompatActivity {
     // Dans le code qui suit nous établissons une action sur les Relative Layout
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_chambre);
+        setContentView(R.layout.chambre_vertical);
 
         lit= findViewById(R.id.lit); //Liaison entre variable et Bouton
         lit.setOnClickListener(new View.OnClickListener() {

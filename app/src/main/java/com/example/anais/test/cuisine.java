@@ -5,8 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 // Il y a beaucoup de répétition dans notre code j'ai donc choisi de commenter Chambre, Main Activité, Choix Pièce et Ecrire
@@ -24,7 +22,7 @@ public class cuisine extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView( R.layout.activity_cuisine);
+        setContentView( R.layout.cuisine_vertical);
         frigo= findViewById(R.id.frig1);
         frigo.setOnClickListener(new OnClickListener() {
             @Override

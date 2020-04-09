@@ -15,4 +15,7 @@
     <string name="imagesalon">imageSalon</string>
     <string name="imagesdb">imagesdb</string>
     <string name="imagejeu">imagejeu</string>
+    <string name="imagejardin">imagejardin</string>
+    <string name="imagecuisine">imagecuisine</string>
+    <string name="imagechambre">imagechambre</string>
 </resources>
