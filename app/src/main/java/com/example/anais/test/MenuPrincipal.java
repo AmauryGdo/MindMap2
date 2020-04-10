@@ -72,10 +72,28 @@ public class MenuPrincipal extends AppCompatActivity {
         // Checks the orientation of the screen
         if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
             setContentView(R.layout.menu_principal_horizontal);
+
         } else if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
             setContentView(R.layout.menu_principal_vertical);
 
         }
+        memo = findViewById(R.id.boutonMem);
+        info = findViewById(R.id.infor);
+        memo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                visualiser_la_suite();
+
+            }
+        });
+
+        info = findViewById(R.id.infor);
+        info.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                visualiser_la_suite2();
+            }
+        });
     }
 
     private void visualiser_la_suite() {
