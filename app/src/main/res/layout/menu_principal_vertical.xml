@@ -8,30 +8,31 @@
 
     <Button
         android:id="@+id/boutonMem"
-        android:layout_width="245dp"
-        android:layout_height="100dp"
+        android:layout_width="240dp"
+        android:layout_height="90dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="50dp"
-        android:background="#FFFF6B"
+
         android:cursorVisible="false"
         android:text="@string/commencer_m_moriser"
         android:textAppearance="@android:style/TextAppearance.Material.WindowTitle"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.663" />
+        app:layout_constraintVertical_bias="0.692" />
 
     <Button
         android:id="@+id/infor"
-        android:layout_width="245dp"
-        android:layout_height="100dp"
+        android:layout_width="240dp"
+        android:layout_height="90dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:background="#FFFF6B"
+
         android:text="@string/information"
         android:textAppearance="@android:style/TextAppearance.Material.Widget.ActionBar.Title"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -42,8 +43,8 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="252dp"
-        android:layout_height="247dp"
+        android:layout_width="270dp"
+        android:layout_height="258dp"
         android:layout_marginStart="50dp"
         android:layout_marginTop="78dp"
         android:layout_marginEnd="51dp"
