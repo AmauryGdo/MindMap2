@@ -6,17 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".Chambre">
 
-    <RelativeLayout
-        android:id="@+id/lit"
-        android:layout_width="199dp"
-        android:layout_height="74dp"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="307dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-    </RelativeLayout>
-
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="459dp"
@@ -28,6 +17,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/chambre1" />
+
+    <RelativeLayout
+        android:id="@+id/lit"
+        android:layout_width="199dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="307dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </RelativeLayout>
 
 
     <RelativeLayout
