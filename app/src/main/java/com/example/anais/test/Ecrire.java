@@ -58,14 +58,7 @@ public class Ecrire extends AppCompatActivity{
 
 }
 
-    /*
-private void visualiser_la_suite()
-{
-    Intent intent = new Intent(this, MenuSelection.class);
-    startActivity(intent);
-
-}
-*/
+  
 
 
 

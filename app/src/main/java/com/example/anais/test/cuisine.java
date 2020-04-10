@@ -11,15 +11,6 @@ import android.widget.RelativeLayout;
 // Il y a beaucoup de répétition dans notre code j'ai donc choisi de commenter Chambre, Main Activité, Choix Pièce et Ecrire
 public class cuisine extends AppCompatActivity {
 
-    private RelativeLayout frigo;
-    private RelativeLayout four;
-    private RelativeLayout orange;
-    private RelativeLayout plante;
-    private RelativeLayout corbeille;
-    private RelativeLayout fenetre;
-    private RelativeLayout armoire;
-    private RelativeLayout chat;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,7 +20,7 @@ public class cuisine extends AppCompatActivity {
             case Configuration.ORIENTATION_PORTRAIT:
 
                 setContentView(R.layout.cuisine_vertical);
-                frigo = findViewById(R.id.frig1);
+                RelativeLayout frigo = findViewById(R.id.frig1);
                 frigo.setOnClickListener(new OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -40,7 +31,7 @@ public class cuisine extends AppCompatActivity {
                     }
                 });
 
-                orange = findViewById(R.id.orange1);
+                RelativeLayout orange = findViewById(R.id.orange1);
                 orange.setOnClickListener(new OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -50,7 +41,7 @@ public class cuisine extends AppCompatActivity {
                     }
                 });
 
-                corbeille = findViewById(R.id.corbeille1);
+                RelativeLayout corbeille = findViewById(R.id.corbeille1);
                 corbeille.setOnClickListener(new OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -59,7 +50,7 @@ public class cuisine extends AppCompatActivity {
                         startActivity(i);
                     }
                 });
-                fenetre = findViewById(R.id.fenetre1);
+                RelativeLayout fenetre = findViewById(R.id.fenetre1);
                 fenetre.setOnClickListener(new OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -69,7 +60,7 @@ public class cuisine extends AppCompatActivity {
                     }
                 });
 
-                four = findViewById(R.id.four1);
+                RelativeLayout four = findViewById(R.id.four1);
                 four.setOnClickListener(new OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -79,7 +70,7 @@ public class cuisine extends AppCompatActivity {
                     }
                 });
 
-                plante = findViewById(R.id.plante1);
+                RelativeLayout plante = findViewById(R.id.plante1);
                 plante.setOnClickListener(new OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -89,7 +80,7 @@ public class cuisine extends AppCompatActivity {
                     }
                 });
 
-                armoire = findViewById(R.id.armoire1);
+                RelativeLayout armoire = findViewById(R.id.armoire1);
                 armoire.setOnClickListener(new OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -99,7 +90,7 @@ public class cuisine extends AppCompatActivity {
                     }
                 });
 
-                chat = findViewById(R.id.chat1);
+                RelativeLayout chat = findViewById(R.id.chat1);
                 chat.setOnClickListener(new OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -203,7 +194,7 @@ public class cuisine extends AppCompatActivity {
         if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
             setContentView(R.layout.cuisine_horizontal);
         } else if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
-            setContentView(R.layout.cuisine_vertical);
+            setContentView(R.layout.cuisine_vertical  );
 
         }
     }
