@@ -10,21 +10,12 @@
     app:rowCount="8">
 
     <ImageButton
-        android:id="@+id/chambre"
-        android:layout_width="129dp"
-        android:layout_height="124dp"
-        android:scaleType="fitXY"
-        app:layout_column="6"
-        app:layout_row="0"
-        app:srcCompat="@drawable/chambre" />
-
-    <ImageButton
         android:id="@+id/cuisine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scaleType="fitXY"
         app:layout_column="5"
-        app:layout_row="7"
+        app:layout_row="6"
         app:srcCompat="@drawable/logocuisine" />
 
     <ImageButton
@@ -33,17 +24,8 @@
         android:layout_height="132dp"
         android:scaleType="fitXY"
         app:layout_column="4"
-        app:layout_row="4"
+        app:layout_row="5"
         app:srcCompat="@drawable/logosalon" />
-
-    <ImageButton
-        android:id="@+id/salledebain"
-        android:layout_width="132dp"
-        android:layout_height="130dp"
-        android:scaleType="fitXY"
-        app:layout_column="6"
-        app:layout_row="6"
-        app:srcCompat="@drawable/salledebain" />
 
     <ImageButton
         android:id="@+id/jeu"
@@ -51,7 +33,7 @@
         android:layout_height="wrap_content"
         android:scaleType="fitXY"
         app:layout_column="2"
-        app:layout_row="7"
+        app:layout_row="6"
         app:srcCompat="@drawable/jeu" />
 
     <ImageButton
@@ -62,4 +44,22 @@
         app:layout_column="5"
         app:layout_row="5"
         app:srcCompat="@drawable/logojardin" />
+
+    <ImageButton
+        android:id="@+id/chambre"
+        android:layout_width="129dp"
+        android:layout_height="124dp"
+        android:scaleType="fitXY"
+        app:layout_column="2"
+        app:layout_row="5"
+        app:srcCompat="@drawable/chambre" />
+
+    <ImageButton
+        android:id="@+id/salledebain"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_column="4"
+        app:layout_row="6"
+        app:srcCompat="@drawable/salledebain" />
 </android.support.v7.widget.GridLayout>

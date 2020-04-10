@@ -20,9 +20,9 @@ public class MenuPrincipal extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         switch (getResources().getConfiguration().orientation) {
+
             case Configuration.ORIENTATION_PORTRAIT:
                 setContentView(R.layout.menu_principal_vertical);
-
                 memo = findViewById(R.id.boutonMem);
                 memo.setOnClickListener(new View.OnClickListener() {
                     @Override
