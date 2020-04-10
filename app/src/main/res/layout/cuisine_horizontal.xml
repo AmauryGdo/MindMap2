@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="676dp"
+        android:layout_height="458dp"
+        android:layout_marginTop="131dp"
+        android:layout_marginBottom="182dp"
+        android:contentDescription="@string/imagecuisine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cuisine" />
+
+    <RelativeLayout
+        android:id="@+id/frig1"
+        android:layout_width="85dp"
+        android:layout_height="182dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/chat1"
+        android:layout_width="50dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="428dp"
+        android:layout_marginTop="256dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/plante1"
+        android:layout_width="40dp"
+        android:layout_height="67dp"
+
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="128dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/four1"
+        android:layout_width="66dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="203dp"
+        android:layout_marginTop="295dp"
+        android:layout_marginEnd="166dp"
+        android:layout_marginBottom="381dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.51">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fenetre1"
+        android:layout_width="68dp"
+        android:layout_height="142dp"
+        android:layout_marginStart="596dp"
+        android:layout_marginTop="128dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/orange1"
+        android:layout_width="32dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="464dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/corbeille1"
+        android:layout_width="32dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="500dp"
+        android:layout_marginTop="152dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/armoire1"
+        android:layout_width="81dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
