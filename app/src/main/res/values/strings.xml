@@ -18,4 +18,10 @@
     <string name="imagejardin">imagejardin</string>
     <string name="imagecuisine">imagecuisine</string>
     <string name="imagechambre">imagechambre</string>
+    <string name="todo">TODO</string>
+    <string name="menucuisine">menucuisine</string>
+    <string name="menusalledebain">menusalledebain</string>
+    <string name="menujeu">menujeu</string>
+    <string name="menusalon">menusalon</string>
+    <string name="menujardin">menujardin</string>
 </resources>
