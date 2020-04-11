@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".salledebain">
+
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="663dp"
+        android:layout_height="913dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginEnd="5dp"
+        android:contentDescription="@string/imagesdb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/piecesalledebain" />
+
+
+    <RelativeLayout
+        android:id="@+id/corbeille2"
+        android:layout_width="74dp"
+        android:layout_height="124dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="313dp"
+        android:layout_marginEnd="316dp"
+        android:layout_marginBottom="314dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.37"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lavabo"
+        android:layout_width="121dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="307dp"
+        android:layout_marginEnd="182dp"
+        android:layout_marginBottom="339dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.536">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/baignoire"
+        android:layout_width="263dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="196dp"
+        android:layout_marginTop="452dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="168dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.737"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.512">
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
