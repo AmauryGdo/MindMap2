@@ -43,8 +43,6 @@ public class Ecrire extends AppCompatActivity{
                 texte.setText(textememorise);
 
             }
-
-
         }
         boutonRetour.setOnClickListener(new OnClickListener() {
             @Override
@@ -52,6 +50,7 @@ public class Ecrire extends AppCompatActivity{
                 // on sauvegarde le texte dans sharedPreferences
                 sharedPreferences.edit().putString(nomObjet, texte.getText().toString()).apply();
                 //finish();
+
                 Intent intent = new Intent(Ecrire.this, MenuSelection.class); // et on revient au menu
                 startActivity(intent);
             }

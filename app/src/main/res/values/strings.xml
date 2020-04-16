@@ -28,6 +28,6 @@
     <string name="retour">retour</string>
     <string name="plus">+</string>
     <string name="moins">-</string>
-    <string name="moins">-</string>
-    <string name="plus">+</string>
+    <string name="moin">-</string>
+    <string name="plu">+</string>
 </resources>

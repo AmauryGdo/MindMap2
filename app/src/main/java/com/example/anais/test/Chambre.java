@@ -20,15 +20,6 @@ public class Chambre extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-       /* SharedPreferences result = getBaseContext().getSharedPreferences( "listeDesMemos",MODE_PRIVATE);
-        String value = result.getString("objetclique",null);
-        if(value.isEmpty()){
-            notif_lit.setVisibility(View.INVISIBLE);
-        }
-        else{
-            notif_lit.setVisibility(View.VISIBLE);
-        }*/
-
         switch (getResources().getConfiguration().orientation) {
 
             case Configuration.ORIENTATION_PORTRAIT:
@@ -36,7 +27,7 @@ public class Chambre extends AppCompatActivity {
 
                 //Déclaration des variables
                 RelativeLayout lit = findViewById(R.id.lit); //Liaison entre variable et Bouton
-                notif_lit =findViewById(R.id.notif_lit); // liaison variable image
+                 // liaison variable image
                 lit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -101,6 +92,13 @@ public class Chambre extends AppCompatActivity {
                     }
                 });
     }
+        notif_lit =findViewById(R.id.notif_lit);
+
+        SharedPreferences result = getBaseContext().getSharedPreferences( "listeDesMemos",MODE_PRIVATE);
+        boolean value = result.getBoolean("lit", false);
+        if(value){
+            notif_lit.setVisibility(View.VISIBLE);
+        }
         }
 
     @Override
