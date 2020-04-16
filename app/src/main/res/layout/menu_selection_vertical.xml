@@ -26,7 +26,7 @@
         android:contentDescription="@string/menusalon"
         android:scaleType="fitXY"
         app:layout_column="4"
-        app:layout_row="6"
+        app:layout_row="2"
         app:srcCompat="@drawable/logosalon" />
 
     <ImageButton
@@ -36,7 +36,7 @@
         android:contentDescription="@string/menujeu"
         android:scaleType="fitXY"
         app:layout_column="2"
-        app:layout_row="6"
+        app:layout_row="2"
         app:srcCompat="@drawable/jeu" />
 
     <ImageButton
@@ -46,7 +46,7 @@
         android:contentDescription="@string/menujardin"
         android:scaleType="fitXY"
         app:layout_column="2"
-        app:layout_row="5"
+        app:layout_row="1"
         app:srcCompat="@drawable/logojardin" />
 
     <ImageButton
@@ -56,7 +56,7 @@
         android:contentDescription="@string/todo"
         android:scaleType="fitXY"
         app:layout_column="4"
-        app:layout_row="5"
+        app:layout_row="1"
         app:srcCompat="@drawable/chambre" />
 
     <ImageButton
@@ -68,4 +68,23 @@
         app:layout_column="2"
         app:layout_row="0"
         app:srcCompat="@drawable/salledebain" />
+
+    <ImageButton
+        android:id="@+id/ajouter"
+        android:layout_width="78dp"
+        android:layout_height="77dp"
+        android:scaleType="fitXY"
+        app:layout_column="4"
+        app:layout_row="3"
+        app:srcCompat="@drawable/ajouter" />
+
+    <ImageButton
+        android:id="@+id/supprimer"
+        android:layout_width="61dp"
+        android:layout_height="43dp"
+        android:scaleType="fitXY"
+        app:layout_column="2"
+        app:layout_row="3"
+        app:srcCompat="@drawable/supprimer" />
+
 </android.support.v7.widget.GridLayout>

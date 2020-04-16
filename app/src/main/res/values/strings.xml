@@ -24,4 +24,10 @@
     <string name="menujeu">menujeu</string>
     <string name="menusalon">menusalon</string>
     <string name="menujardin">menujardin</string>
+    <string name="notification">notification</string>
+    <string name="retour">retour</string>
+    <string name="plus">+</string>
+    <string name="moins">-</string>
+    <string name="moins">-</string>
+    <string name="plus">+</string>
 </resources>

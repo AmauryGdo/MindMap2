@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.view.View.OnClickListener;
+import android.widget.ImageView;
+import android.widget.Switch;
 import android.widget.TextView;
 // Il y a beaucoup de répétition dans notre code j'ai donc choisi de commenter Chambre, Main Activité, Choix Pièce et Ecrire
 //Nous sommes dans l'activité qui permet à l'utilisateur de saisir le texte qu'il veut faire mémoriser dans un objet
@@ -18,6 +20,7 @@ public class Ecrire extends AppCompatActivity{
     EditText texte;
     String nomObjet;
     SharedPreferences sharedPreferences;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +33,6 @@ public class Ecrire extends AppCompatActivity{
         texte=findViewById(R.id.texte);
         boutonRetour = findViewById(R.id.boutonRetour);
 
-
         Bundle extras = getIntent().getExtras();
         if(extras != null)
         { nomObjet= extras.getString("objetclique"); // on stocke la valeur envoyée dans une variable nomObjet
@@ -41,6 +43,7 @@ public class Ecrire extends AppCompatActivity{
                 texte.setText(textememorise);
 
             }
+
 
         }
         boutonRetour.setOnClickListener(new OnClickListener() {

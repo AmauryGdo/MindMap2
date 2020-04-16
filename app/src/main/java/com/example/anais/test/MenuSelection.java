@@ -15,7 +15,7 @@ import android.widget.ImageButton;
 
 
 public class MenuSelection extends AppCompatActivity {
-    //Création varaibles Image Bouton
+    //Création variables Image Bouton
     private ImageButton chambre_;  // pour mieux comprendre un truc
     private ImageButton salledebain;
     private ImageButton cuisine;
