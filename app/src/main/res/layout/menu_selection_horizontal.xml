@@ -12,6 +12,19 @@
     >
 
     <ImageButton
+        android:id="@+id/ajouter"
+        android:layout_width="134dp"
+        android:layout_height="131dp"
+        android:layout_row="2"
+        android:layout_column="3"
+        android:contentDescription="@string/imageajouter"
+        android:scaleType="fitXY"
+        android:translationY="70dp"
+        app:layout_column="4"
+        app:layout_row="3"
+        app:srcCompat="@drawable/ajouter" />
+
+    <ImageButton
         android:id="@+id/chambre"
         android:layout_width="200dp"
         android:layout_height="200dp"
@@ -71,19 +84,4 @@
         android:scaleType="centerInside"
         app:srcCompat="@drawable/logojardin" />
 
-    <Button
-        android:id="@+id/Ajouter"
-        android:layout_width="130dp"
-        android:layout_height="200dp"
-        android:layout_row="2"
-        android:layout_column="3"
-        android:text="@string/plus" />
-
-    <Button
-        android:id="@+id/Supprimer"
-        android:layout_width="130dp"
-        android:layout_height="200dp"
-        android:layout_row="3"
-        android:layout_column="3"
-        android:text="@string/moins" />
 </GridLayout>

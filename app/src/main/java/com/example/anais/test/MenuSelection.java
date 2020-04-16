@@ -11,6 +11,8 @@ import android.content.res.Configuration;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.ImageButton;
 
 
@@ -28,9 +30,6 @@ public class MenuSelection extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        // setContentView(R.layout.MenuPrincipal);
-
 
         switch (getResources().getConfiguration().orientation) {
             case Configuration.ORIENTATION_PORTRAIT:
@@ -145,7 +144,6 @@ public class MenuSelection extends AppCompatActivity {
                         visualiser_la_suite6();
                     }
                 });
-
                 break;
 
         }
@@ -204,4 +202,4 @@ public class MenuSelection extends AppCompatActivity {
     }
 }
 
-// ON S'OCCUPPE DU MENU VERTICAL
+

@@ -71,20 +71,12 @@
 
     <ImageButton
         android:id="@+id/ajouter"
-        android:layout_width="78dp"
-        android:layout_height="77dp"
+        android:layout_width="134dp"
+        android:layout_height="131dp"
+        android:contentDescription="@string/imageajouter"
         android:scaleType="fitXY"
         app:layout_column="4"
         app:layout_row="3"
         app:srcCompat="@drawable/ajouter" />
-
-    <ImageButton
-        android:id="@+id/supprimer"
-        android:layout_width="61dp"
-        android:layout_height="43dp"
-        android:scaleType="fitXY"
-        app:layout_column="2"
-        app:layout_row="3"
-        app:srcCompat="@drawable/supprimer" />
 
 </android.support.v7.widget.GridLayout>

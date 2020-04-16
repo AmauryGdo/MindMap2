@@ -30,4 +30,7 @@
     <string name="moins">-</string>
     <string name="moin">-</string>
     <string name="plu">+</string>
+    <string name="imageajouter">imageajouter</string>
+    <string name="imagesupprimer">imagesupprimer</string>
+    <string name="done">DONE</string>
 </resources>

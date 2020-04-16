@@ -12,8 +12,8 @@ import android.widget.RelativeLayout;
 // Il y a beaucoup de répétition dans notre code j'ai donc choisi de commenter Chambre, Main Activité, Choix Pièce et Ecrire
 public class Chambre extends AppCompatActivity {
 
-    ImageView notif_lit;
-    ImageView notif_fen_2;
+   // ImageView notif_lit;
+    //ImageView notif_fen_2;
 
     @Override
     // Dans le code qui suit nous établissons une action sur les Relative Layout
@@ -92,13 +92,13 @@ public class Chambre extends AppCompatActivity {
                     }
                 });
     }
-        notif_lit =findViewById(R.id.notif_lit);
+        /*notif_lit =findViewById(R.id.notif_lit);
 
         SharedPreferences result = getBaseContext().getSharedPreferences( "listeDesMemos",MODE_PRIVATE);
         boolean value = result.getBoolean("lit", false);
         if(value){
             notif_lit.setVisibility(View.VISIBLE);
-        }
+        }*/
         }
 
     @Override
