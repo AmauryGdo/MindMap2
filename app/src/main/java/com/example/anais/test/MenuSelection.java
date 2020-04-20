@@ -8,22 +8,23 @@ package com.example.anais.test;
 
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 
 public class MenuSelection extends AppCompatActivity {
-    //Création variables Image Bouton
-    private ImageButton chambre_;  // pour mieux comprendre un truc
     private ImageButton salledebain;
     private ImageButton cuisine;
     private ImageButton jeu;
     private ImageButton jardin;
     private ImageButton salon;
+    int i=0;
 
 
     // Il y a beaucoup de répétition dans notre code j'ai donc choisi de commenter Chambre, Main Activité, Choix Pièce et Ecrire
@@ -35,9 +36,7 @@ public class MenuSelection extends AppCompatActivity {
             case Configuration.ORIENTATION_PORTRAIT:
                 setContentView(R.layout.menu_selection_vertical);
 
-
-                chambre_ = findViewById(R.id.chambre);
-                // monBouton.setText("Valisez");
+                ImageButton chambre_ = findViewById(R.id.chambre);//Création variable Image Bouton et liaision au bouton physique
                 chambre_.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -50,7 +49,22 @@ public class MenuSelection extends AppCompatActivity {
                 cuisine.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        visualiser_la_suite2();
+                        //visualiser_la_suite2();
+                        //test
+                        i++;
+                            Handler handler = new Handler();
+                            handler.postDelayed(new Runnable(){
+                                @Override
+                                public void run(){
+                                    if (i==1){
+                                        visualiser_la_suite2();
+                                    } else if (i == 2) {
+                                        Toast.makeText(MenuSelection.this,"Cuisine supprimée",Toast.LENGTH_SHORT).show();
+                                    }
+                                    i=0;
+                                }
+                            },500);
+
                     }
                 });
 

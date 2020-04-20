@@ -20,7 +20,8 @@ public class Ecrire extends AppCompatActivity{
     EditText texte;
     String nomObjet;
     SharedPreferences sharedPreferences;
-
+    String lit;
+    ImageView notif_lit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +33,7 @@ public class Ecrire extends AppCompatActivity{
         origine=findViewById(R.id.origine);
         texte=findViewById(R.id.texte);
         boutonRetour = findViewById(R.id.boutonRetour);
+        notif_lit =findViewById(R.id.notif_lit);
 
         Bundle extras = getIntent().getExtras();
         if(extras != null)
@@ -49,7 +51,9 @@ public class Ecrire extends AppCompatActivity{
             public void onClick(View v) {  //Lorsque on clique sur le bouton retour on met à jour la mémoire
                 // on sauvegarde le texte dans sharedPreferences
                 sharedPreferences.edit().putString(nomObjet, texte.getText().toString()).apply();
-                //finish();
+                if (sharedPreferences.contains(lit)){
+                    notif_lit.setVisibility(View.VISIBLE);
+                }
 
                 Intent intent = new Intent(Ecrire.this, MenuSelection.class); // et on revient au menu
                 startActivity(intent);

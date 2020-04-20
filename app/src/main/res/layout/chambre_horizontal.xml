@@ -37,8 +37,8 @@
             android:layout_height="44dp"
             android:adjustViewBounds="false"
             android:contentDescription="@string/notification"
+            android:visibility="gone"
             app:srcCompat="@drawable/notification"
-            android:visibility="invisible"
             tools:ignore="DuplicateIds" />
     </RelativeLayout>
 
