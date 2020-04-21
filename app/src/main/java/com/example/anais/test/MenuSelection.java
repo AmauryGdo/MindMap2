@@ -49,24 +49,20 @@ public class MenuSelection extends AppCompatActivity {
                 cuisine.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        //visualiser_la_suite2();
-                        //test
-                        i++;
-                            Handler handler = new Handler();
-                            handler.postDelayed(new Runnable(){
-                                @Override
-                                public void run(){
-                                    if (i==1){
-                                        visualiser_la_suite2();
-                                    } else if (i == 2) {
-                                        Toast.makeText(MenuSelection.this,"Cuisine supprimée",Toast.LENGTH_SHORT).show();
-                                    }
-                                    i=0;
-                                }
-                            },500);
+                        visualiser_la_suite2();
+                    };
 
+
+                });
+
+                cuisine.setOnLongClickListener(new View.OnLongClickListener() {
+                    @Override
+                    public boolean onLongClick(View v) {
+                        Toast.makeText(MenuSelection.this,"Cuisine supprimée",Toast.LENGTH_SHORT).show();
+                        return false;
                     }
                 });
+
 
 
                 jardin = findViewById(R.id.jardin);
