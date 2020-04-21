@@ -20,10 +20,13 @@ import android.widget.Toast;
 
 public class MenuSelection extends AppCompatActivity {
     private ImageButton salledebain;
-    private ImageButton cuisine;
+    private ImageButton cuisineon;
     private ImageButton jeu;
     private ImageButton jardin;
     private ImageButton salon;
+    private ImageButton chambre;
+    private ImageButton cuisineoff;
+
     int i=0;
 
 
@@ -36,35 +39,51 @@ public class MenuSelection extends AppCompatActivity {
             case Configuration.ORIENTATION_PORTRAIT:
                 setContentView(R.layout.menu_selection_vertical);
 
-                ImageButton chambre_ = findViewById(R.id.chambre);//Création variable Image Bouton et liaision au bouton physique
-                chambre_.setOnClickListener(new View.OnClickListener() {
+                chambre = findViewById(R.id.chambre);
+                chambre.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         visualiser_la_suite();
 
                     }
                 });
-
-                cuisine = findViewById(R.id.cuisine);
-                cuisine.setOnClickListener(new View.OnClickListener() {
+//test cuisine--------------------------------------------------------------------------------------------------------------
+               //initialisation du bouton on et de son listeneur vers l'activity Cuisine
+                cuisineon = findViewById(R.id.cuisine);
+                cuisineon.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         visualiser_la_suite2();
-                    };
-
+                    }
 
                 });
+                // initialisation du bouton off
+                cuisineoff = findViewById(R.id.cuisineoff);
 
-                cuisine.setOnLongClickListener(new View.OnLongClickListener() {
+                //initialisation du detecteur de long clic et de son action pour faire disparaitre le bouton on
+
+                cuisineon.setOnLongClickListener(new View.OnLongClickListener() {
                     @Override
                     public boolean onLongClick(View v) {
-                        Toast.makeText(MenuSelection.this,"Cuisine supprimée",Toast.LENGTH_SHORT).show();
+                        cuisineoff.setVisibility(View.VISIBLE); //le bouton off remplace le bouton ON
+                        cuisineon.setVisibility(View.GONE);
+                        Toast.makeText(MenuSelection.this,"Cuisine supprimée",Toast.LENGTH_SHORT).show(); //apparition d'un message de validation
+                        return false;
+                    }
+                });
+//initialisation du detecteur de long clic et de son action pour faire disparaitre le bouton off
+
+                cuisineoff.setOnLongClickListener(new View.OnLongClickListener() {
+                    @Override
+                    public boolean onLongClick(View v) {
+                        cuisineoff.setVisibility(View.GONE); //le bouton on remplace le bouton off
+                        cuisineon.setVisibility(View.VISIBLE);
+                        Toast.makeText(MenuSelection.this,"Cuisine ajoutée",Toast.LENGTH_SHORT).show(); //apparition d'un message de validation
                         return false;
                     }
                 });
 
-
-
+// fin test Cuisine------------------------------------------------------------------------------------------------------------------
                 jardin = findViewById(R.id.jardin);
                 jardin.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -104,9 +123,9 @@ public class MenuSelection extends AppCompatActivity {
                 setContentView(R.layout.menu_selection_horizontal);
 
 
-                chambre_ = findViewById(R.id.chambre);
+                chambre = findViewById(R.id.chambre);
                 // monBouton.setText("Valisez");
-                chambre_.setOnClickListener(new View.OnClickListener() {
+                chambre.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         visualiser_la_suite();
@@ -114,8 +133,8 @@ public class MenuSelection extends AppCompatActivity {
                     }
                 });
 
-                cuisine = findViewById(R.id.cuisine);
-                cuisine.setOnClickListener(new View.OnClickListener() {
+                cuisineon = findViewById(R.id.cuisine);
+                cuisineon.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         visualiser_la_suite2();

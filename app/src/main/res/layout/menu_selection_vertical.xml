@@ -80,14 +80,4 @@
         app:layout_row="0"
         app:srcCompat="@drawable/salledebain" />
 
-    <ImageButton
-        android:id="@+id/ajouter"
-        android:layout_width="134dp"
-        android:layout_height="131dp"
-        android:contentDescription="@string/imageajouter"
-        android:scaleType="fitXY"
-        app:layout_column="4"
-        app:layout_row="3"
-        app:srcCompat="@drawable/ajouter" />
-
 </android.support.v7.widget.GridLayout>
