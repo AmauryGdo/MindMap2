@@ -62,6 +62,7 @@ public class MenuSelection extends AppCompatActivity {
 
                         cuisine.setVisibility(View.INVISIBLE);
 
+
                         return false;
                     }
                 });
