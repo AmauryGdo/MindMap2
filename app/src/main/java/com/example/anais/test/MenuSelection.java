@@ -48,7 +48,7 @@ public class MenuSelection extends AppCompatActivity {
                     }
                 });
 //test cuisine--------------------------------------------------------------------------------------------------------------
-               //initialisation du bouton on et de son listeneur vers l'activity Cuisine
+               //initialisation du bouton On et de son listeneur vers l'activity Cuisine
                 cuisineon = findViewById(R.id.cuisine);
                 cuisineon.setOnClickListener(new View.OnClickListener() {
                     @Override
