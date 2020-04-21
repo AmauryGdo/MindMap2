@@ -59,6 +59,9 @@ public class MenuSelection extends AppCompatActivity {
                     @Override
                     public boolean onLongClick(View v) {
                         Toast.makeText(MenuSelection.this,"Cuisine supprimée",Toast.LENGTH_SHORT).show();
+
+                        cuisine.setVisibility(View.INVISIBLE);
+
                         return false;
                     }
                 });
