@@ -300,6 +300,30 @@ public class MenuSelection extends AppCompatActivity {
                         visualiser_la_suite2();
                     }
                 });
+                cuisineoff = findViewById(R.id.cuisineoff);
+
+                //initialisation du detecteur de long clic et de son action pour faire disparaitre le bouton on
+
+                cuisineon.setOnLongClickListener(new View.OnLongClickListener() {
+                    @Override
+                    public boolean onLongClick(View v) {
+                        cuisineoff.setVisibility(View.VISIBLE); //le bouton off remplace le bouton ON
+                        cuisineon.setVisibility(View.GONE);
+                        Toast.makeText(MenuSelection.this,"Cuisine supprimée",Toast.LENGTH_SHORT).show(); //apparition d'un message de validation
+                        return false;
+                    }
+                });
+//initialisation du detecteur de long clic et de son action pour faire disparaitre le bouton off
+
+                cuisineoff.setOnLongClickListener(new View.OnLongClickListener() {
+                    @Override
+                    public boolean onLongClick(View v) {
+                        cuisineoff.setVisibility(View.GONE); //le bouton on remplace le bouton off
+                        cuisineon.setVisibility(View.VISIBLE);
+                        Toast.makeText(MenuSelection.this,"Cuisine ajoutée",Toast.LENGTH_SHORT).show(); //apparition d'un message de validation
+                        return false;
+                    }
+                });
 
 
                 jardinon = findViewById(R.id.jardin);
