@@ -8,12 +8,9 @@ package com.example.anais.test;
 
 import android.content.Intent;
 import android.content.res.Configuration;
-import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
@@ -33,19 +30,19 @@ public class MenuSelection extends AppCompatActivity {
     private ImageButton salonoff;
 
 
-
-    int i=0;
-
-
-    // Il y a beaucoup de répétition dans notre code j'ai donc choisi de commenter Chambre, Main Activité, Choix Pièce et Ecrire
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         switch (getResources().getConfiguration().orientation) {
+//================================================VERTICALE====================================================================
+
             case Configuration.ORIENTATION_PORTRAIT:
                 setContentView(R.layout.menu_selection_vertical);
 
+
+// Chambre---------------------------------------------------------------------------------------------------------------------------------------
+                //initialisation du bouton On et de son listeneur vers l'activity Chambre
                 chambreon = findViewById(R.id.chambre);
                 chambreon.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -54,11 +51,10 @@ public class MenuSelection extends AppCompatActivity {
 
                     }
                 });
-
+                // initialisation du bouton off
                 chambreoff = findViewById(R.id.chambreoff);
 
                 //initialisation du detecteur de long clic et de son action pour faire disparaitre le bouton on
-
                 chambreon.setOnLongClickListener(new View.OnLongClickListener() {
                     @Override
                     public boolean onLongClick(View v) {
@@ -69,6 +65,7 @@ public class MenuSelection extends AppCompatActivity {
                     }
                 });
 
+                //initialisation du detecteur de long clic et de son action pour faire disparaitre le bouton off
                 chambreoff.setOnLongClickListener(new View.OnLongClickListener() {
                     @Override
                     public boolean onLongClick(View v) {
@@ -79,8 +76,8 @@ public class MenuSelection extends AppCompatActivity {
                     }
                 });
 
-//test cuisine--------------------------------------------------------------------------------------------------------------
-               //initialisation du bouton On et de son listeneur vers l'activity Cuisine
+//cuisine-------------------------------------------------------------------------------------------------------------------------------------
+
                 cuisineon = findViewById(R.id.cuisine);
                 cuisineon.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -89,33 +86,29 @@ public class MenuSelection extends AppCompatActivity {
                     }
 
                 });
-                // initialisation du bouton off
+
                 cuisineoff = findViewById(R.id.cuisineoff);
-
-                //initialisation du detecteur de long clic et de son action pour faire disparaitre le bouton on
-
                 cuisineon.setOnLongClickListener(new View.OnLongClickListener() {
                     @Override
                     public boolean onLongClick(View v) {
-                        cuisineoff.setVisibility(View.VISIBLE); //le bouton off remplace le bouton ON
+                        cuisineoff.setVisibility(View.VISIBLE);
                         cuisineon.setVisibility(View.GONE);
-                        Toast.makeText(MenuSelection.this,"Cuisine supprimée",Toast.LENGTH_SHORT).show(); //apparition d'un message de validation
+                        Toast.makeText(MenuSelection.this,"Cuisine supprimée",Toast.LENGTH_SHORT).show();
                         return false;
                     }
                 });
-//initialisation du detecteur de long clic et de son action pour faire disparaitre le bouton off
 
                 cuisineoff.setOnLongClickListener(new View.OnLongClickListener() {
                     @Override
                     public boolean onLongClick(View v) {
-                        cuisineoff.setVisibility(View.GONE); //le bouton on remplace le bouton off
+                        cuisineoff.setVisibility(View.GONE);
                         cuisineon.setVisibility(View.VISIBLE);
-                        Toast.makeText(MenuSelection.this,"Cuisine ajoutée",Toast.LENGTH_SHORT).show(); //apparition d'un message de validation
+                        Toast.makeText(MenuSelection.this,"Cuisine ajoutée",Toast.LENGTH_SHORT).show();
                         return false;
                     }
                 });
 
-// fin test Cuisine------------------------------------------------------------------------------------------------------------------
+//Jardin------------------------------------------------------------------------------------------------------------------
                 jardinon = findViewById(R.id.jardin);
                 jardinon.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -123,29 +116,29 @@ public class MenuSelection extends AppCompatActivity {
                         visualiser_la_suite3();
                     }
                 });
+
                 jardinoff = findViewById(R.id.jardinoff);
                 jardinon.setOnLongClickListener(new View.OnLongClickListener() {
                     @Override
                     public boolean onLongClick(View v) {
-                        jardinoff.setVisibility(View.VISIBLE); //le bouton off remplace le bouton ON
+                        jardinoff.setVisibility(View.VISIBLE);
                         jardinon.setVisibility(View.GONE);
-                        Toast.makeText(MenuSelection.this,"jardin supprimée",Toast.LENGTH_SHORT).show(); //apparition d'un message de validation
+                        Toast.makeText(MenuSelection.this,"jardin supprimée",Toast.LENGTH_SHORT).show();
                         return false;
                     }
                 });
                 jardinoff.setOnLongClickListener(new View.OnLongClickListener() {
                     @Override
                     public boolean onLongClick(View v) {
-                        jardinoff.setVisibility(View.GONE); //le bouton on remplace le bouton off
+                        jardinoff.setVisibility(View.GONE);
                         jardinon.setVisibility(View.VISIBLE);
-                        Toast.makeText(MenuSelection.this,"jardin ajoutée",Toast.LENGTH_SHORT).show(); //apparition d'un message de validation
+                        Toast.makeText(MenuSelection.this,"jardin ajoutée",Toast.LENGTH_SHORT).show();
                         return false;
                     }
                 });
 
 
-// fin  jardin ------------------------------------------------------------------------------------------------------------------
-
+//Jeu ------------------------------------------------------------------------------------------------------------------
 
                 jeuon = findViewById(R.id.jeu);
                 jeuon.setOnClickListener(new View.OnClickListener() {
@@ -154,34 +147,29 @@ public class MenuSelection extends AppCompatActivity {
                         visualiser_la_suite4();
                     }
                 });
-                // initialisation du bouton off
+
                 jeuoff = findViewById(R.id.jeuoff);
-
-                //initialisation du detecteur de long clic et de son action pour faire disparaitre le bouton on
-
                 jeuon.setOnLongClickListener(new View.OnLongClickListener() {
                     @Override
                     public boolean onLongClick(View v) {
-                        jeuoff.setVisibility(View.VISIBLE); //le bouton off remplace le bouton ON
+                        jeuoff.setVisibility(View.VISIBLE);
                         jeuon.setVisibility(View.GONE);
-                        Toast.makeText(MenuSelection.this,"jeu supprimée",Toast.LENGTH_SHORT).show(); //apparition d'un message de validation
+                        Toast.makeText(MenuSelection.this,"jeu supprimée",Toast.LENGTH_SHORT).show();
                         return false;
                     }
                 });
-//initialisation du detecteur de long clic et de son action pour faire disparaitre le bouton off
 
                 jeuoff.setOnLongClickListener(new View.OnLongClickListener() {
                     @Override
                     public boolean onLongClick(View v) {
-                        jeuoff.setVisibility(View.GONE); //le bouton on remplace le bouton off
+                        jeuoff.setVisibility(View.GONE);
                         jeuon.setVisibility(View.VISIBLE);
-                        Toast.makeText(MenuSelection.this,"jeu ajoutée",Toast.LENGTH_SHORT).show(); //apparition d'un message de validation
+                        Toast.makeText(MenuSelection.this,"jeu ajoutée",Toast.LENGTH_SHORT).show();
                         return false;
                     }
                 });
 
-// fin test jeu------------------------------------------------------------------------------------------------------------------
-
+// Salle de bain ------------------------------------------------------------------------------------------------------------------
 
                 salledebainon = findViewById(R.id.salledebain);
                 salledebainon.setOnClickListener(new View.OnClickListener() {
@@ -191,34 +179,29 @@ public class MenuSelection extends AppCompatActivity {
                     }
 
                 });
-                // initialisation du bouton off
+
                 salledebainoff = findViewById(R.id.salledebainoff);
-
-                //initialisation du detecteur de long clic et de son action pour faire disparaitre le bouton on
-
                 salledebainon.setOnLongClickListener(new View.OnLongClickListener() {
                     @Override
                     public boolean onLongClick(View v) {
-                        salledebainoff.setVisibility(View.VISIBLE); //le bouton off remplace le bouton ON
+                        salledebainoff.setVisibility(View.VISIBLE);
                         salledebainon.setVisibility(View.GONE);
-                        Toast.makeText(MenuSelection.this,"salle de bain supprimée",Toast.LENGTH_SHORT).show(); //apparition d'un message de validation
+                        Toast.makeText(MenuSelection.this,"salle de bain supprimée",Toast.LENGTH_SHORT).show();
                         return false;
                     }
                 });
-//initialisation du detecteur de long clic et de son action pour faire disparaitre le bouton off
 
                 salledebainoff.setOnLongClickListener(new View.OnLongClickListener() {
                     @Override
                     public boolean onLongClick(View v) {
-                        salledebainoff.setVisibility(View.GONE); //le bouton on remplace le bouton off
+                        salledebainoff.setVisibility(View.GONE);
                         salledebainon.setVisibility(View.VISIBLE);
-                        Toast.makeText(MenuSelection.this,"salle de bain ajoutée",Toast.LENGTH_SHORT).show(); //apparition d'un message de validation
+                        Toast.makeText(MenuSelection.this,"salle de bain ajoutée",Toast.LENGTH_SHORT).show();
                         return false;
                     }
                 });
 
-// fin test salledebain------------------------------------------------------------------------------------------------------------------
-
+// Salon ------------------------------------------------------------------------------------------------------------------
 
                 salonon = findViewById(R.id.salon);
                 salonon.setOnClickListener(new View.OnClickListener() {
@@ -227,14 +210,14 @@ public class MenuSelection extends AppCompatActivity {
                         visualiser_la_suite6();
                     }
                 });
-                salonoff = findViewById(R.id.cuisineoff);
 
+                salonoff = findViewById(R.id.salonoff);
                 salonon.setOnLongClickListener(new View.OnLongClickListener() {
                     @Override
                     public boolean onLongClick(View v) {
-                        salonoff.setVisibility(View.VISIBLE); //le bouton off remplace le bouton ON
+                        salonoff.setVisibility(View.VISIBLE);
                         salonon.setVisibility(View.GONE);
-                        Toast.makeText(MenuSelection.this,"salon supprimée",Toast.LENGTH_SHORT).show(); //apparition d'un message de validation
+                        Toast.makeText(MenuSelection.this,"salon supprimée",Toast.LENGTH_SHORT).show();
                         return false;
                     }
                 });
@@ -242,23 +225,19 @@ public class MenuSelection extends AppCompatActivity {
                 salonoff.setOnLongClickListener(new View.OnLongClickListener() {
                     @Override
                     public boolean onLongClick(View v) {
-                        salonoff.setVisibility(View.GONE); //le bouton on remplace le bouton off
+                        salonoff.setVisibility(View.GONE);
                         salonon.setVisibility(View.VISIBLE);
-                        Toast.makeText(MenuSelection.this,"salon ajoutée",Toast.LENGTH_SHORT).show(); //apparition d'un message de validation
+                        Toast.makeText(MenuSelection.this,"salon ajoutée",Toast.LENGTH_SHORT).show();
                         return false;
                     }
                 });
-
-// fin test Cuisine------------------------------------------------------------------------------------------------------------------
-
-
                 break;
 
-
+//==========================================HORIZONTALE===================================================================
             case Configuration.ORIENTATION_LANDSCAPE:
                 setContentView(R.layout.menu_selection_horizontal);
 
-
+//Chambre-------------------------------------------------------------------------------------------------------------------
                 chambreon = findViewById(R.id.chambre);
                 chambreon.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -267,16 +246,14 @@ public class MenuSelection extends AppCompatActivity {
 
                     }
                 });
+
                 chambreoff = findViewById(R.id.chambreoff);
-
-                //initialisation du detecteur de long clic et de son action pour faire disparaitre le bouton on
-
                 chambreon.setOnLongClickListener(new View.OnLongClickListener() {
                     @Override
                     public boolean onLongClick(View v) {
-                        chambreoff.setVisibility(View.VISIBLE); //le bouton off remplace le bouton ON
+                        chambreoff.setVisibility(View.VISIBLE);
                         chambreon.setVisibility(View.GONE);
-                        Toast.makeText(MenuSelection.this,"chambre supprimée",Toast.LENGTH_SHORT).show(); //apparition d'un message de validation
+                        Toast.makeText(MenuSelection.this,"chambre supprimée",Toast.LENGTH_SHORT).show();
                         return false;
                     }
                 });
@@ -284,14 +261,14 @@ public class MenuSelection extends AppCompatActivity {
                 chambreoff.setOnLongClickListener(new View.OnLongClickListener() {
                     @Override
                     public boolean onLongClick(View v) {
-                        chambreoff.setVisibility(View.GONE); //le bouton on remplace le bouton off
+                        chambreoff.setVisibility(View.GONE);
                         chambreon.setVisibility(View.VISIBLE);
-                        Toast.makeText(MenuSelection.this,"chambre ajoutée",Toast.LENGTH_SHORT).show(); //apparition d'un message de validation
+                        Toast.makeText(MenuSelection.this,"chambre ajoutée",Toast.LENGTH_SHORT).show();
                         return false;
                     }
                 });
 
-//test cuisine--------------------------------------------------------------------------------------------------------------
+//cuisine--------------------------------------------------------------------------------------------------------------
 
                 cuisineon = findViewById(R.id.cuisine);
                 cuisineon.setOnClickListener(new View.OnClickListener() {
@@ -300,32 +277,29 @@ public class MenuSelection extends AppCompatActivity {
                         visualiser_la_suite2();
                     }
                 });
+
                 cuisineoff = findViewById(R.id.cuisineoff);
-
-                //initialisation du detecteur de long clic et de son action pour faire disparaitre le bouton on
-
                 cuisineon.setOnLongClickListener(new View.OnLongClickListener() {
                     @Override
                     public boolean onLongClick(View v) {
-                        cuisineoff.setVisibility(View.VISIBLE); //le bouton off remplace le bouton ON
+                        cuisineoff.setVisibility(View.VISIBLE);
                         cuisineon.setVisibility(View.GONE);
-                        Toast.makeText(MenuSelection.this,"Cuisine supprimée",Toast.LENGTH_SHORT).show(); //apparition d'un message de validation
+                        Toast.makeText(MenuSelection.this,"Cuisine supprimée",Toast.LENGTH_SHORT).show();
                         return false;
                     }
                 });
-//initialisation du detecteur de long clic et de son action pour faire disparaitre le bouton off
 
                 cuisineoff.setOnLongClickListener(new View.OnLongClickListener() {
                     @Override
                     public boolean onLongClick(View v) {
-                        cuisineoff.setVisibility(View.GONE); //le bouton on remplace le bouton off
+                        cuisineoff.setVisibility(View.GONE);
                         cuisineon.setVisibility(View.VISIBLE);
-                        Toast.makeText(MenuSelection.this,"Cuisine ajoutée",Toast.LENGTH_SHORT).show(); //apparition d'un message de validation
+                        Toast.makeText(MenuSelection.this,"Cuisine ajoutée",Toast.LENGTH_SHORT).show();
                         return false;
                     }
                 });
 
-
+//Jardin-------------------------------------------------------------------------------------------------------------------
                 jardinon = findViewById(R.id.jardin);
                 jardinon.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -334,6 +308,26 @@ public class MenuSelection extends AppCompatActivity {
                     }
                 });
 
+                jardinoff = findViewById(R.id.jardinoff);
+                jardinon.setOnLongClickListener(new View.OnLongClickListener() {
+                    @Override
+                    public boolean onLongClick(View v) {
+                        jardinoff.setVisibility(View.VISIBLE);
+                        jardinon.setVisibility(View.GONE);
+                        Toast.makeText(MenuSelection.this,"jardin supprimée",Toast.LENGTH_SHORT).show();
+                        return false;
+                    }
+                });
+                jardinoff.setOnLongClickListener(new View.OnLongClickListener() {
+                    @Override
+                    public boolean onLongClick(View v) {
+                        jardinoff.setVisibility(View.GONE);
+                        jardinon.setVisibility(View.VISIBLE);
+                        Toast.makeText(MenuSelection.this,"jardin ajoutée",Toast.LENGTH_SHORT).show();
+                        return false;
+                    }
+                });
+//Jeu------------------------------------------------------------------------------------------------------------------------
                 jeuon = findViewById(R.id.jeu);
                 jeuon.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -341,6 +335,28 @@ public class MenuSelection extends AppCompatActivity {
                         visualiser_la_suite4();
                     }
                 });
+
+                jeuoff = findViewById(R.id.jeuoff);
+                jeuon.setOnLongClickListener(new View.OnLongClickListener() {
+                    @Override
+                    public boolean onLongClick(View v) {
+                        jeuoff.setVisibility(View.VISIBLE);
+                        jeuon.setVisibility(View.GONE);
+                        Toast.makeText(MenuSelection.this,"jeu supprimée",Toast.LENGTH_SHORT).show();
+                        return false;
+                    }
+                });
+
+                jeuoff.setOnLongClickListener(new View.OnLongClickListener() {
+                    @Override
+                    public boolean onLongClick(View v) {
+                        jeuoff.setVisibility(View.GONE);
+                        jeuon.setVisibility(View.VISIBLE);
+                        Toast.makeText(MenuSelection.this,"jeu ajoutée",Toast.LENGTH_SHORT).show();
+                        return false;
+                    }
+                });
+//Salle de bain---------------------------------------------------------------------------------------------------------------
 
                 salledebainon = findViewById(R.id.salledebain);
                 salledebainon.setOnClickListener(new View.OnClickListener() {
@@ -350,6 +366,28 @@ public class MenuSelection extends AppCompatActivity {
                     }
                 });
 
+                salledebainoff = findViewById(R.id.salledebainoff);
+                salledebainon.setOnLongClickListener(new View.OnLongClickListener() {
+                    @Override
+                    public boolean onLongClick(View v) {
+                        salledebainoff.setVisibility(View.VISIBLE);
+                        salledebainon.setVisibility(View.GONE);
+                        Toast.makeText(MenuSelection.this,"salle de bain supprimée",Toast.LENGTH_SHORT).show();
+                        return false;
+                    }
+                });
+
+                salledebainoff.setOnLongClickListener(new View.OnLongClickListener() {
+                    @Override
+                    public boolean onLongClick(View v) {
+                        salledebainoff.setVisibility(View.GONE);
+                        salledebainon.setVisibility(View.VISIBLE);
+                        Toast.makeText(MenuSelection.this,"salle de bain ajoutée",Toast.LENGTH_SHORT).show();
+                        return false;
+                    }
+                });
+//Salon-------------------------------------------------------------------------------------------------------------------------
+
                 salonon = findViewById(R.id.salon);
                 salonon.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -357,16 +395,37 @@ public class MenuSelection extends AppCompatActivity {
                         visualiser_la_suite6();
                     }
                 });
+
+                salonoff = findViewById(R.id.salonoff);
+                salonon.setOnLongClickListener(new View.OnLongClickListener() {
+                    @Override
+                    public boolean onLongClick(View v) {
+                        salonoff.setVisibility(View.VISIBLE);
+                        salonon.setVisibility(View.GONE);
+                        Toast.makeText(MenuSelection.this,"salon supprimée",Toast.LENGTH_SHORT).show();
+                        return false;
+                    }
+                });
+
+                salonoff.setOnLongClickListener(new View.OnLongClickListener() {
+                    @Override
+                    public boolean onLongClick(View v) {
+                        salonoff.setVisibility(View.GONE);
+                        salonon.setVisibility(View.VISIBLE);
+                        Toast.makeText(MenuSelection.this,"salon ajoutée",Toast.LENGTH_SHORT).show();
+                        return false;
+                    }
+                });
                 break;
 
         }
     }
 
+    // Permet de detecter l'orientation du telephone a tout moment et ainsi afficher le bon layout correspondant a l'orientation
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
 
-        // Checks the orientation of the screen
         if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
             setContentView(R.layout.menu_selection_horizontal);
         } else if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
@@ -376,7 +435,7 @@ public class MenuSelection extends AppCompatActivity {
     }
 
 
-    // creation de fonction visualiser la suite
+    // creation de fonction pour acceder au activity correspondante
     private void visualiser_la_suite() {
         Intent intent = new Intent(MenuSelection.this, Chambre.class);
         startActivity(intent);
