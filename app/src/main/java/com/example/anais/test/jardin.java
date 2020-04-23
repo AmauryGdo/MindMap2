@@ -119,9 +119,9 @@ public class jardin extends AppCompatActivity {
 
         // Checks the orientation of the screen
         if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
-            setContentView(R.layout.jeu_horizontal);
+            setContentView(R.layout.jardin_horizontal);
         } else if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
-            setContentView(R.layout.jeu_vertical  );
+            setContentView(R.layout.jardin_vertical  );
 
         }
     }

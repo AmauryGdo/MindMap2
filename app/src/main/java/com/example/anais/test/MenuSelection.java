@@ -1,9 +1,3 @@
-//NE SERT A RIEN
-// residu
-
-
-
-
 package com.example.anais.test;
 
 import android.content.Intent;

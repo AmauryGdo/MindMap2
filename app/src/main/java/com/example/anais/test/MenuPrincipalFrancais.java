@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MenuPrincipal extends AppCompatActivity {
+public class MenuPrincipalFrancais extends AppCompatActivity {
     // définition variable de type bouton
     private Button memo;
     private Button info;
@@ -97,14 +97,14 @@ public class MenuPrincipal extends AppCompatActivity {
     }
 
     private void visualiser_la_suite() {
-        Intent intent = new Intent(MenuPrincipal.this, MenuSelection.class);
+        Intent intent = new Intent(MenuPrincipalFrancais.this, MenuSelection.class);
         startActivity(intent);
 
     }
 
 
     private void visualiser_la_suite2() {
-        Intent intent2 = new Intent(MenuPrincipal.this, information.class);
+        Intent intent2 = new Intent(MenuPrincipalFrancais.this, information.class);
         startActivity(intent2);
     }
 
