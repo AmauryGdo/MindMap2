@@ -6,4 +6,43 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/infohori"
-    />
+    >
+
+    <TextView
+        android:id="@+id/textinfo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="187dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginBottom="123dp"
+        android:text="Avec MindMap, mémorisez facilement tout ce que vous souhaitez de façon ludique.                                             Imprégnez vous des pièces de la maison et ajoutez dans chacun des objets des éléments à mémorisez !  "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="101dp"
+        android:text="Vous serez surpris par votre mémoire."
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textinfo"
+        app:layout_constraintVertical_bias="0.0" />
+</android.support.constraint.ConstraintLayout>
