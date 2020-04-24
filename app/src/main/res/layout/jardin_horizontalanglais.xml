@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".jardinAnglais">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="731dp"
+        android:layout_height="1000dp"
+        android:layout_marginStart="16dp"
+        android:contentDescription="@string/imagejardin"
+        app:layout_anchorGravity="left|top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/jardin" />
+
+    <RelativeLayout
+        android:id="@+id/table"
+        android:layout_width="184dp"
+        android:layout_height="161dp"
+        android:layout_marginStart="309dp"
+        android:layout_marginTop="234dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/hamac"
+        android:layout_width="277dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="222dp"
+        android:layout_marginTop="107dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fleur"
+        android:layout_width="74dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="128dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/buisson"
+        android:layout_width="134dp"
+        android:layout_height="149dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="79dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

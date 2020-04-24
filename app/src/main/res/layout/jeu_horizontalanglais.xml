@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".jeuAnglais">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="651dp"
+        android:layout_height="440dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="49dp"
+        android:contentDescription="@string/imagejeu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/salledejeu" />
+
+    <RelativeLayout
+        android:id="@+id/tableau"
+        android:layout_width="77dp"
+        android:layout_height="206dp"
+        android:layout_marginStart="340dp"
+        android:layout_marginTop="295dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="288dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.724"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.542">
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/pouf"
+        android:layout_width="110dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="114dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/guitare"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.604"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.575">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/guitare"
+        android:layout_width="155dp"
+        android:layout_height="102dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginBottom="69dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/batterie"
+        app:layout_constraintTop_toBottomOf="@+id/pouf"
+        tools:visibility="visible">
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/xylophone"
+        android:layout_width="116dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="320dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guitare"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/batterie" />
+
+    <RelativeLayout
+        android:id="@+id/batterie"
+        android:layout_width="228dp"
+        android:layout_height="138dp"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="131dp"
+        android:layout_marginEnd="99dp"
+        app:layout_constraintBottom_toTopOf="@+id/xylophone"
+        app:layout_constraintEnd_toStartOf="@+id/guitare"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
