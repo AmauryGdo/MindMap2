@@ -26,7 +26,7 @@ public class salledebainAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(salledebainAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "lavabo"); //Optional parameters
+                        i.putExtra("objetclique", " sink"); //Optional parameters
                         startActivity(i);
 
                     }
@@ -37,7 +37,7 @@ public class salledebainAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(salledebainAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "baignoire"); //Optional parameters
+                        i.putExtra("objetclique", " bathub"); //Optional parameters
                         startActivity(i);
 
                     }
@@ -48,7 +48,7 @@ public class salledebainAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(salledebainAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "corbeille2"); //Optional parameters
+                        i.putExtra("objetclique", " wastepaper 2"); //Optional parameters
                         startActivity(i);
 
                     }
@@ -64,7 +64,7 @@ public class salledebainAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(salledebainAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "lavabo"); //Optional parameters
+                        i.putExtra("objetclique", " sink"); //Optional parameters
                         startActivity(i);
 
                     }
@@ -75,7 +75,7 @@ public class salledebainAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(salledebainAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "baignoire"); //Optional parameters
+                        i.putExtra("objetclique", " bathub"); //Optional parameters
                         startActivity(i);
 
                     }
@@ -86,7 +86,7 @@ public class salledebainAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(salledebainAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "corbeille2"); //Optional parameters
+                        i.putExtra("objetclique", " wastepaper 2"); //Optional parameters
                         startActivity(i);
 
                     }

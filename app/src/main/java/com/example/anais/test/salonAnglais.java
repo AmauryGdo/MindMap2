@@ -26,7 +26,7 @@ public class salonAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(salonAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "lampe"); //Optional parameters
+                        i.putExtra("objetclique", " lamp"); //Optional parameters
                         startActivity(i);
 
                     }
@@ -37,7 +37,7 @@ public class salonAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(salonAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "canape"); //Optional parameters
+                        i.putExtra("objetclique", " sofa"); //Optional parameters
                         startActivity(i);
 
                     }
@@ -48,7 +48,7 @@ public class salonAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(salonAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "tablebasse"); //Optional parameters
+                        i.putExtra("objetclique", " low table"); //Optional parameters
                         startActivity(i);
 
                     }
@@ -58,7 +58,7 @@ public class salonAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(salonAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "buisson2"); //Optional parameters
+                        i.putExtra("objetclique", " bush 2"); //Optional parameters
                         startActivity(i);
 
                     }
@@ -69,7 +69,7 @@ public class salonAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(salonAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "tele"); //Optional parameters
+                        i.putExtra("objetclique", " Tv"); //Optional parameters
                         startActivity(i);
 
                     }
@@ -85,7 +85,7 @@ public class salonAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(salonAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "lampe"); //Optional parameters
+                        i.putExtra("objetclique", " lamp"); //Optional parameters
                         startActivity(i);
 
                     }
@@ -96,7 +96,7 @@ public class salonAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(salonAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "canape"); //Optional parameters
+                        i.putExtra("objetclique", " sofa"); //Optional parameters
                         startActivity(i);
 
                     }
@@ -107,7 +107,7 @@ public class salonAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(salonAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "tablebasse"); //Optional parameters
+                        i.putExtra("objetclique", " low table"); //Optional parameters
                         startActivity(i);
 
                     }
@@ -117,7 +117,7 @@ public class salonAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(salonAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "buisson2"); //Optional parameters
+                        i.putExtra("objetclique", " bush 2"); //Optional parameters
                         startActivity(i);
 
                     }
@@ -128,7 +128,7 @@ public class salonAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(salonAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "tele"); //Optional parameters
+                        i.putExtra("objetclique", " tv"); //Optional parameters
                         startActivity(i);
 
                     }

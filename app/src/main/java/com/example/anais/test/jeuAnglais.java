@@ -27,7 +27,7 @@ public class jeuAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(jeuAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "guitare"); //Optional parameters
+                        i.putExtra("objetclique", " guitare"); //Optional parameters
                         startActivity(i);
 
                     }
@@ -38,7 +38,7 @@ public class jeuAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(jeuAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "tableau"); //Optional parameters
+                        i.putExtra("objetclique", " board"); //Optional parameters
                         startActivity(i);
 
                     }
@@ -50,7 +50,7 @@ public class jeuAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(jeuAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "xylophone"); //Optional parameters
+                        i.putExtra("objetclique", " xylophone"); //Optional parameters
                         startActivity(i);
 
                     }
@@ -61,7 +61,7 @@ public class jeuAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(jeuAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "pouf"); //Optional parameters
+                        i.putExtra("objetclique", " beanbag"); //Optional parameters
                         startActivity(i);
 
                     }
@@ -77,7 +77,7 @@ public class jeuAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(jeuAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "guitare"); //Optional parameters
+                        i.putExtra("objetclique", " guitare"); //Optional parameters
                         startActivity(i);
 
                     }
@@ -88,7 +88,7 @@ public class jeuAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(jeuAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "tableau"); //Optional parameters
+                        i.putExtra("objetclique", " board"); //Optional parameters
                         startActivity(i);
 
                     }
@@ -100,7 +100,7 @@ public class jeuAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(jeuAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "xylophone"); //Optional parameters
+                        i.putExtra("objetclique", " xylophone"); //Optional parameters
                         startActivity(i);
 
                     }
@@ -111,7 +111,7 @@ public class jeuAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(jeuAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "pouf"); //Optional parameters
+                        i.putExtra("objetclique", " beanbag"); //Optional parameters
                         startActivity(i);
 
                     }

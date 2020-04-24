@@ -20,20 +20,38 @@
             android:name=".salledebain"
             android:label="@string/title_activity_salledebain"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".salledebainAnglais"
+            android:label="@string/title_activity_salledebain"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".MenuPrincipalFrancais" />
         <activity android:name=".MenuPrincipalAnglais" />
         <activity android:name=".Ecrire" />
+        <activity android:name=".EcrireAnglais" />
         <activity android:name=".MenuSelection" />
+        <activity android:name=".MenuSelectionAnglais" />
         <activity android:name=".information" />
+        <activity android:name=".informationAnglais" />
         <activity android:name=".Chambre" />
+        <activity android:name=".ChambreAnglais" />
         <activity android:name=".cuisine" />
+        <activity android:name=".cuisineAnglais" />
         <activity android:name=".jeu" />
+        <activity android:name=".jeuAnglais" />
         <activity
             android:name=".salon"
             android:label="@string/title_activity_salon"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
+            android:name=".salonAnglais"
+            android:label="@string/title_activity_salon"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".jardin"
+            android:label="@string/title_activity_jardin"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".jardinAnglais"
             android:label="@string/title_activity_jardin"
             android:theme="@style/AppTheme.NoActionBar" />
     </application>

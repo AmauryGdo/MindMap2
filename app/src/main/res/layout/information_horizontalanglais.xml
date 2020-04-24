@@ -16,7 +16,7 @@
         android:layout_marginTop="160dp"
         android:layout_marginEnd="151dp"
         android:layout_marginBottom="139dp"
-        android:text="Avec MindMap, mémorisez ce que vous souhaitez de façon ludique. Imprégnez vous des pièces et ajoutez dans les objets des éléments à mémorisez !"
+        android:text="With MindMap, memorise what ever you want in an easy way. Immerse yoursel your MindMap world and feel free to add things to memorise !"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="#000000"
         android:textColorHint="#000000"
@@ -29,14 +29,14 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView2anglais"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="200dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="200dp"
         android:layout_marginBottom="90dp"
-        android:text="Vous serez surpris par votre mémoire."
+        android:text="You'll be surprised by your memory."
         android:textColor="#000000"
         android:textColorHint="#000000"
         android:textSize="18sp"
@@ -44,6 +44,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textinfo"
+        app:layout_constraintTop_toBottomOf="@+id/textinfoanglais"
         app:layout_constraintVertical_bias="1.0" />
 </android.support.constraint.ConstraintLayout>

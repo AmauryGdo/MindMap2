@@ -25,7 +25,7 @@ public class cuisineAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(cuisineAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "frigo"); //Optional parameters
+                        i.putExtra("objetclique", " fridge"); //Optional parameters
                         startActivity(i);
 
                     }
@@ -36,7 +36,7 @@ public class cuisineAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(cuisineAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "orange"); //Optional parameters
+                        i.putExtra("objetclique", " orange"); //Optional parameters
                         startActivity(i);
                     }
                 });
@@ -46,7 +46,7 @@ public class cuisineAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(cuisineAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "corbeille"); //Optional parameters
+                        i.putExtra("objetclique", " wastepaper basket"); //Optional parameters
                         startActivity(i);
                     }
                 });
@@ -55,7 +55,7 @@ public class cuisineAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(cuisineAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "fenetre"); //Optional parameters
+                        i.putExtra("objetclique", " window"); //Optional parameters
                         startActivity(i);
                     }
                 });
@@ -65,7 +65,7 @@ public class cuisineAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(cuisineAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "four"); //Optional parameters
+                        i.putExtra("objetclique", " oven"); //Optional parameters
                         startActivity(i);
                     }
                 });
@@ -75,7 +75,7 @@ public class cuisineAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(cuisineAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "plante"); //Optional parameters
+                        i.putExtra("objetclique", " plant"); //Optional parameters
                         startActivity(i);
                     }
                 });
@@ -85,7 +85,7 @@ public class cuisineAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(cuisineAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "armoire"); //Optional parameters
+                        i.putExtra("objetclique", " wardrobe"); //Optional parameters
                         startActivity(i);
                     }
                 });
@@ -95,7 +95,7 @@ public class cuisineAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(cuisineAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "chat"); //Optional parameters
+                        i.putExtra("objetclique", " cat"); //Optional parameters
                         startActivity(i);
                     }
                 });
@@ -109,7 +109,7 @@ public class cuisineAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(cuisineAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "frigo"); //Optional parameters
+                        i.putExtra("objetclique", " fridge"); //Optional parameters
                         startActivity(i);
 
                     }
@@ -120,7 +120,7 @@ public class cuisineAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(cuisineAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "orange"); //Optional parameters
+                        i.putExtra("objetclique", " orange"); //Optional parameters
                         startActivity(i);
                     }
                 });
@@ -130,7 +130,7 @@ public class cuisineAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(cuisineAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "corbeille"); //Optional parameters
+                        i.putExtra("objetclique", " wastepaper basket"); //Optional parameters
                         startActivity(i);
                     }
                 });
@@ -139,7 +139,7 @@ public class cuisineAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(cuisineAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "fenetre"); //Optional parameters
+                        i.putExtra("objetclique", " window"); //Optional parameters
                         startActivity(i);
                     }
                 });
@@ -149,7 +149,7 @@ public class cuisineAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(cuisineAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "four"); //Optional parameters
+                        i.putExtra("objetclique", " oven"); //Optional parameters
                         startActivity(i);
                     }
                 });
@@ -159,7 +159,7 @@ public class cuisineAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(cuisineAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "plante"); //Optional parameters
+                        i.putExtra("objetclique", " plant"); //Optional parameters
                         startActivity(i);
                     }
                 });
@@ -169,7 +169,7 @@ public class cuisineAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(cuisineAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "armoire"); //Optional parameters
+                        i.putExtra("objetclique", " wardrobe"); //Optional parameters
                         startActivity(i);
                     }
                 });
@@ -179,7 +179,7 @@ public class cuisineAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(cuisineAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "chat"); //Optional parameters
+                        i.putExtra("objetclique", " cat"); //Optional parameters
                         startActivity(i);
                     }
                 });

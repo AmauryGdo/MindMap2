@@ -26,7 +26,7 @@ public class jardinAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(jardinAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "fleur"); //Optional parameters
+                        i.putExtra("objetclique", " flower"); //Optional parameters
                         startActivity(i);
 
                     }
@@ -37,7 +37,7 @@ public class jardinAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(jardinAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "buisson"); //Optional parameters
+                        i.putExtra("objetclique", " bush"); //Optional parameters
                         startActivity(i);
 
                     }
@@ -48,7 +48,7 @@ public class jardinAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(jardinAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "table"); //Optional parameters
+                        i.putExtra("objetclique", " table"); //Optional parameters
                         startActivity(i);
 
                     }
@@ -58,7 +58,7 @@ public class jardinAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(jardinAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "hamac"); //Optional parameters
+                        i.putExtra("objetclique", " hammock"); //Optional parameters
                         startActivity(i);
 
                     }
@@ -73,7 +73,7 @@ public class jardinAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(jardinAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "fleur"); //Optional parameters
+                        i.putExtra("objetclique", " flower"); //Optional parameters
                         startActivity(i);
 
                     }
@@ -84,7 +84,7 @@ public class jardinAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(jardinAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "buisson"); //Optional parameters
+                        i.putExtra("objetclique", " bush"); //Optional parameters
                         startActivity(i);
 
                     }
@@ -95,7 +95,7 @@ public class jardinAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(jardinAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "table"); //Optional parameters
+                        i.putExtra("objetclique", " table"); //Optional parameters
                         startActivity(i);
 
                     }
@@ -105,7 +105,7 @@ public class jardinAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(jardinAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "hamac"); //Optional parameters
+                        i.putExtra("objetclique", " hamock"); //Optional parameters
                         startActivity(i);
 
                     }

@@ -16,7 +16,7 @@
         android:layout_marginTop="320dp"
         android:layout_marginEnd="65dp"
         android:layout_marginBottom="179dp"
-        android:text="With Mindmap, mémorisez ce que vous souhaitez de façon ludique. Imprégnez vous des pièces et ajoutez dans les objets des éléments à mémorisez !"
+        android:text="With MindMap, memorise what ever you want in an easy way. Immerse yoursel your MindMap world and feel free to add things to memorise !"
         android:textColor="#000000"
         android:textColorHint="#000000"
         android:textSize="22sp"

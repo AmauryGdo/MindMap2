@@ -32,7 +32,7 @@ public class ChambreAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent i = new Intent(ChambreAnglais.this, EcrireAnglais.class); //Changement d'activité vers Ecrire
-                        i.putExtra("objetclique", "lit"); //Lorsque on clique sur le bouton une valeur est envoyé vers la classe Ecrit. A Cette valeur
+                        i.putExtra("objetclique", " bed"); //Lorsque on clique sur le bouton une valeur est envoyé vers la classe Ecrit. A Cette valeur
                         startActivity(i);//est reliée le nom de l'objet associé
                     }
                 });
@@ -42,7 +42,7 @@ public class ChambreAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v){
                         Intent i = new Intent(ChambreAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "fenetre"); //Optional parameters
+                        i.putExtra("objetclique", " window"); //Optional parameters
                         startActivity(i);
                     }
                 });
@@ -52,7 +52,7 @@ public class ChambreAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v){
                         Intent i = new Intent(ChambreAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "tableau"); //Optional parameters
+                        i.putExtra("objetclique", " board"); //Optional parameters
                         startActivity(i);
                     }
                 });
@@ -66,7 +66,7 @@ public class ChambreAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v){
                         Intent i = new Intent(ChambreAnglais.this, EcrireAnglais.class); //Changement d'activité vers Ecrire
-                        i.putExtra("objetclique", "lit"); //Lorsque on clique sur le bouton une valeur est envoyé vers la classe Ecrit. A Cette valeur
+                        i.putExtra("objetclique", " bed"); //Lorsque on clique sur le bouton une valeur est envoyé vers la classe Ecrit. A Cette valeur
                         startActivity(i);                                //est reliée le nom de l'objet associé
 
                     }
@@ -77,7 +77,7 @@ public class ChambreAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v){
                         Intent i = new Intent(ChambreAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "fenetre"); //Optional parameters
+                        i.putExtra("objetclique", " window"); //Optional parameters
                         startActivity(i);
                     }
                 });
@@ -87,7 +87,7 @@ public class ChambreAnglais extends AppCompatActivity {
                     @Override
                     public void onClick(View v){
                         Intent i = new Intent(ChambreAnglais.this, EcrireAnglais.class);
-                        i.putExtra("objetclique", "tableau"); //Optional parameters
+                        i.putExtra("objetclique", " board"); //Optional parameters
                         startActivity(i);
                     }
                 });

@@ -28,7 +28,6 @@ public class EcrireAnglais extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ecrire);
 
-
         sharedPreferencesanglais= getBaseContext().getSharedPreferences( "listeDesMemos",MODE_PRIVATE); // on définit le tableau associatif
         origineanglais=findViewById(R.id.origine);
         texteanglais=findViewById(R.id.texte);
@@ -38,7 +37,7 @@ public class EcrireAnglais extends AppCompatActivity{
         Bundle extras = getIntent().getExtras();
         if(extras != null)
         { nomObjetanglais= extras.getString("objetclique"); // on stocke la valeur envoyée dans une variable nomObjet
-            origineanglais.setText("Vous enregistrez dans l'objet:"+nomObjetanglais); //On affiche que le texte est bien mémorisé dans l'objet cliqué
+            origineanglais.setText("You are saving in the object :"+nomObjetanglais); //On affiche que le texte est bien mémorisé dans l'objet cliqué
             if(sharedPreferencesanglais.contains(nomObjetanglais)){  //condition vérifiant si une donnée a déjà été stockée
                 String textememorise = sharedPreferencesanglais.getString(nomObjetanglais, null);
                 System.out.println(textememorise);

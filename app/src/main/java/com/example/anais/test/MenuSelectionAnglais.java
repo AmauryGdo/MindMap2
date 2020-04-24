@@ -135,7 +135,7 @@ public class MenuSelectionAnglais extends AppCompatActivity {
 
 //Jeu ------------------------------------------------------------------------------------------------------------------
 
-                jeuonanglais = findViewById(R.id.jeu);
+                jeuonanglais = findViewById(R.id.jeuanglais);
                 jeuonanglais.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
