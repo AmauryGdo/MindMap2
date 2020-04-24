@@ -54,7 +54,7 @@ public class MenuSelectionAnglais extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         chambreoffanglais.setVisibility(View.VISIBLE); //le bouton off remplace le bouton ON
                         chambreonanglais.setVisibility(View.GONE);
-                        Toast.makeText(MenuSelectionAnglais.this,"chambre supprimée",Toast.LENGTH_SHORT).show(); //apparition d'un message de validation
+                        Toast.makeText(MenuSelectionAnglais.this,"bedroom deleted",Toast.LENGTH_SHORT).show(); //apparition d'un message de validation
                         return false;
                     }
                 });
@@ -65,7 +65,7 @@ public class MenuSelectionAnglais extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         chambreoffanglais.setVisibility(View.GONE); //le bouton on remplace le bouton off
                         chambreonanglais.setVisibility(View.VISIBLE);
-                        Toast.makeText(MenuSelectionAnglais.this,"chambre ajoutée",Toast.LENGTH_SHORT).show(); //apparition d'un message de validation
+                        Toast.makeText(MenuSelectionAnglais.this,"bedroom added",Toast.LENGTH_SHORT).show(); //apparition d'un message de validation
                         return false;
                     }
                 });
@@ -87,7 +87,7 @@ public class MenuSelectionAnglais extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         cuisineoffanglais.setVisibility(View.VISIBLE);
                         cuisineonanglais.setVisibility(View.GONE);
-                        Toast.makeText(MenuSelectionAnglais.this,"Cuisine supprimée",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MenuSelectionAnglais.this,"kitchen deleted",Toast.LENGTH_SHORT).show();
                         return false;
                     }
                 });
@@ -97,7 +97,7 @@ public class MenuSelectionAnglais extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         cuisineoffanglais.setVisibility(View.GONE);
                         cuisineonanglais.setVisibility(View.VISIBLE);
-                        Toast.makeText(MenuSelectionAnglais.this,"Cuisine ajoutée",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MenuSelectionAnglais.this,"kitchen added",Toast.LENGTH_SHORT).show();
                         return false;
                     }
                 });
@@ -112,12 +112,13 @@ public class MenuSelectionAnglais extends AppCompatActivity {
                 });
 
                 jardinoffanglais = findViewById(R.id.jardinoffanglais);
+
                 jardinonanglais.setOnLongClickListener(new View.OnLongClickListener() {
                     @Override
                     public boolean onLongClick(View v) {
                         jardinoffanglais.setVisibility(View.VISIBLE);
                         jardinonanglais.setVisibility(View.GONE);
-                        Toast.makeText(MenuSelectionAnglais.this,"jardin supprimée",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MenuSelectionAnglais.this,"garden deleted",Toast.LENGTH_SHORT).show();
                         return false;
                     }
                 });
@@ -126,7 +127,7 @@ public class MenuSelectionAnglais extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         jardinoffanglais.setVisibility(View.GONE);
                         jardinonanglais.setVisibility(View.VISIBLE);
-                        Toast.makeText(MenuSelectionAnglais.this,"jardin ajoutée",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MenuSelectionAnglais.this,"garden added",Toast.LENGTH_SHORT).show();
                         return false;
                     }
                 });
@@ -148,7 +149,7 @@ public class MenuSelectionAnglais extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         jeuoffanglais.setVisibility(View.VISIBLE);
                         jeuonanglais.setVisibility(View.GONE);
-                        Toast.makeText(MenuSelectionAnglais.this,"jeu supprimée",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MenuSelectionAnglais.this,"playroom deleted",Toast.LENGTH_SHORT).show();
                         return false;
                     }
                 });
@@ -158,7 +159,7 @@ public class MenuSelectionAnglais extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         jeuoffanglais.setVisibility(View.GONE);
                         jeuonanglais.setVisibility(View.VISIBLE);
-                        Toast.makeText(MenuSelectionAnglais.this,"jeu ajoutée",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MenuSelectionAnglais.this,"playroom added",Toast.LENGTH_SHORT).show();
                         return false;
                     }
                 });
@@ -180,7 +181,7 @@ public class MenuSelectionAnglais extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         salledebainoffanglais.setVisibility(View.VISIBLE);
                         salledebainonanglais.setVisibility(View.GONE);
-                        Toast.makeText(MenuSelectionAnglais.this,"salle de bain supprimée",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MenuSelectionAnglais.this,"bathroom deleted",Toast.LENGTH_SHORT).show();
                         return false;
                     }
                 });
@@ -190,7 +191,7 @@ public class MenuSelectionAnglais extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         salledebainoffanglais.setVisibility(View.GONE);
                         salledebainonanglais.setVisibility(View.VISIBLE);
-                        Toast.makeText(MenuSelectionAnglais.this,"salle de bain ajoutée",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MenuSelectionAnglais.this,"bathroom added",Toast.LENGTH_SHORT).show();
                         return false;
                     }
                 });
@@ -211,7 +212,7 @@ public class MenuSelectionAnglais extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         salonoffanglais.setVisibility(View.VISIBLE);
                         salononanglais.setVisibility(View.GONE);
-                        Toast.makeText(MenuSelectionAnglais.this,"salon supprimée",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MenuSelectionAnglais.this,"living room deleted",Toast.LENGTH_SHORT).show();
                         return false;
                     }
                 });
@@ -221,7 +222,7 @@ public class MenuSelectionAnglais extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         salonoffanglais.setVisibility(View.GONE);
                         salononanglais.setVisibility(View.VISIBLE);
-                        Toast.makeText(MenuSelectionAnglais.this,"salon ajoutée",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MenuSelectionAnglais.this,"living room added",Toast.LENGTH_SHORT).show();
                         return false;
                     }
                 });
@@ -247,7 +248,7 @@ public class MenuSelectionAnglais extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         chambreoffanglais.setVisibility(View.VISIBLE);
                         chambreonanglais.setVisibility(View.GONE);
-                        Toast.makeText(MenuSelectionAnglais.this,"chambre supprimée",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MenuSelectionAnglais.this,"bedroom deleted",Toast.LENGTH_SHORT).show();
                         return false;
                     }
                 });
@@ -257,7 +258,7 @@ public class MenuSelectionAnglais extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         chambreoffanglais.setVisibility(View.GONE);
                         chambreonanglais.setVisibility(View.VISIBLE);
-                        Toast.makeText(MenuSelectionAnglais.this,"chambre ajoutée",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MenuSelectionAnglais.this,"bedroom added",Toast.LENGTH_SHORT).show();
                         return false;
                     }
                 });
@@ -278,7 +279,7 @@ public class MenuSelectionAnglais extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         cuisineoffanglais.setVisibility(View.VISIBLE);
                         cuisineonanglais.setVisibility(View.GONE);
-                        Toast.makeText(MenuSelectionAnglais.this,"Cuisine supprimée",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MenuSelectionAnglais.this,"kitchen deleted",Toast.LENGTH_SHORT).show();
                         return false;
                     }
                 });
@@ -288,7 +289,7 @@ public class MenuSelectionAnglais extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         cuisineoffanglais.setVisibility(View.GONE);
                         cuisineonanglais.setVisibility(View.VISIBLE);
-                        Toast.makeText(MenuSelectionAnglais.this,"Cuisine ajoutée",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MenuSelectionAnglais.this,"kitchen added",Toast.LENGTH_SHORT).show();
                         return false;
                     }
                 });
@@ -308,7 +309,7 @@ public class MenuSelectionAnglais extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         jardinoffanglais.setVisibility(View.VISIBLE);
                         jardinonanglais.setVisibility(View.GONE);
-                        Toast.makeText(MenuSelectionAnglais.this,"jardin supprimée",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MenuSelectionAnglais.this,"garden deleted",Toast.LENGTH_SHORT).show();
                         return false;
                     }
                 });
@@ -317,7 +318,7 @@ public class MenuSelectionAnglais extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         jardinoffanglais.setVisibility(View.GONE);
                         jardinonanglais.setVisibility(View.VISIBLE);
-                        Toast.makeText(MenuSelectionAnglais.this,"jardin ajoutée",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MenuSelectionAnglais.this,"garden added",Toast.LENGTH_SHORT).show();
                         return false;
                     }
                 });
@@ -336,7 +337,7 @@ public class MenuSelectionAnglais extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         jeuoffanglais.setVisibility(View.VISIBLE);
                         jeuonanglais.setVisibility(View.GONE);
-                        Toast.makeText(MenuSelectionAnglais.this,"jeu supprimée",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MenuSelectionAnglais.this,"playroom deleted",Toast.LENGTH_SHORT).show();
                         return false;
                     }
                 });
@@ -346,7 +347,7 @@ public class MenuSelectionAnglais extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         jeuoffanglais.setVisibility(View.GONE);
                         jeuonanglais.setVisibility(View.VISIBLE);
-                        Toast.makeText(MenuSelectionAnglais.this,"jeu ajoutée",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MenuSelectionAnglais.this,"playroom added",Toast.LENGTH_SHORT).show();
                         return false;
                     }
                 });
@@ -366,7 +367,7 @@ public class MenuSelectionAnglais extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         salledebainoffanglais.setVisibility(View.VISIBLE);
                         salledebainonanglais.setVisibility(View.GONE);
-                        Toast.makeText(MenuSelectionAnglais.this,"salle de bain supprimée",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MenuSelectionAnglais.this,"bathroom deleted ",Toast.LENGTH_SHORT).show();
                         return false;
                     }
                 });
@@ -376,7 +377,7 @@ public class MenuSelectionAnglais extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         salledebainoffanglais.setVisibility(View.GONE);
                         salledebainonanglais.setVisibility(View.VISIBLE);
-                        Toast.makeText(MenuSelectionAnglais.this,"salle de bain ajoutée",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MenuSelectionAnglais.this,"bathroom added",Toast.LENGTH_SHORT).show();
                         return false;
                     }
                 });
@@ -396,7 +397,7 @@ public class MenuSelectionAnglais extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         salonoffanglais.setVisibility(View.VISIBLE);
                         salononanglais.setVisibility(View.GONE);
-                        Toast.makeText(MenuSelectionAnglais.this,"salon supprimée",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MenuSelectionAnglais.this,"living room deleted",Toast.LENGTH_SHORT).show();
                         return false;
                     }
                 });
@@ -406,7 +407,7 @@ public class MenuSelectionAnglais extends AppCompatActivity {
                     public boolean onLongClick(View v) {
                         salonoffanglais.setVisibility(View.GONE);
                         salononanglais.setVisibility(View.VISIBLE);
-                        Toast.makeText(MenuSelectionAnglais.this,"salon ajoutée",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MenuSelectionAnglais.this,"living room added",Toast.LENGTH_SHORT).show();
                         return false;
                     }
                 });

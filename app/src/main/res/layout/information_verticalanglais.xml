@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".information"
+    tools:context=".informationAnglais"
     android:background="@drawable/infoverti"
     >
 
@@ -28,14 +28,14 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textView3anglais"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="89dp"
         android:layout_marginTop="23dp"
         android:layout_marginEnd="89dp"
         android:layout_marginBottom="90dp"
-        android:text="Vous serez surpris par votre mémoire."
+        android:text="You'll be surprised by your memory."
         android:textColor="#000000"
         android:textColorHint="#000000"
         android:textSize="22sp"
@@ -43,7 +43,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textinfo"
+        app:layout_constraintTop_toBottomOf="@+id/textinfoanglais"
         app:layout_constraintVertical_bias="0.375" />
 </android.support.constraint.ConstraintLayout>
 

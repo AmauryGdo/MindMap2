@@ -16,7 +16,7 @@
         android:layout_marginBottom="50dp"
 
         android:cursorVisible="false"
-        android:text="@string/commencer_m_moriser"
+        android:text="start memorizing"
         android:textAppearance="@android:style/TextAppearance.Material.WindowTitle"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
