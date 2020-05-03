@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+// SIMILAIRE A LA VERSION FRANCAISE
 
 public class MenuSelectionAnglais extends AppCompatActivity {
 

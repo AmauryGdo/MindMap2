@@ -129,5 +129,10 @@ public class jeu extends AppCompatActivity {
             setContentView(R.layout.jeu_vertical  );
 
         }
+
+
+
+
+
     }
 }

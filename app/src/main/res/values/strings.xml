@@ -33,4 +33,10 @@
     <string name="imageajouter">imageajouter</string>
     <string name="imagesupprimer">imagesupprimer</string>
     <string name="done">DONE</string>
+    <string name="english">English</string>
+    <string name="francais">Francais</string>
+    <string name="changer_langue">CHANGER LANGUE</string>
+    <string name="change_language">change language</string>
+    <string name="start_memorizing">start memorizing</string>
+    <string name="start_memorizin">START MEMORIZING</string>
 </resources>

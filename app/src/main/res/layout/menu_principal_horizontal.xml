@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF">
@@ -14,13 +13,12 @@
         android:layout_marginTop="296dp"
         android:layout_marginEnd="140dp"
         android:layout_marginBottom="51dp"
+        android:background="@drawable/custom_button1"
         android:text="@string/informations"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/custom_button1"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/boutonMem"
@@ -30,14 +28,24 @@
         android:layout_marginTop="296dp"
         android:layout_marginEnd="391dp"
         android:layout_marginBottom="51dp"
+        android:background="@drawable/custom_button1"
         android:text="@string/commencer_memoriser"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/custom_button1"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+    android:id="@+id/Langue"
+    android:layout_width="129dp"
+    android:layout_height="52dp"
+    android:layout_marginStart="12dp"
+    android:layout_marginTop="13dp"
+    android:background="@drawable/custom_button1"
+    android:text="@string/changer_langue"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView3"

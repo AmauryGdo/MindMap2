@@ -14,9 +14,8 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="50dp"
-
-        android:cursorVisible="false"
-        android:text="start memorizing"
+        android:background="@drawable/custom_button1"
+        android:text="@string/start_memorizin"
         android:textAppearance="@android:style/TextAppearance.Material.WindowTitle"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,9 +23,7 @@
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.692"
-        android:background="@drawable/custom_button1"
-        />
+        app:layout_constraintVertical_bias="0.692" />
 
     <Button
         android:id="@+id/inforanglais"
@@ -35,14 +32,24 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/custom_button1"
-
-        android:text="@string/information"
+        android:text="@string/informations"
         android:textAppearance="@android:style/TextAppearance.Material.Widget.ActionBar.Title"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.816" />
+
+    <Button
+        android:id="@+id/Langue"
+        android:layout_width="129dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/custom_button1"
+        android:text="@string/change_language"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView3"

@@ -1,5 +1,8 @@
 package com.example.anais.test;
 
+// Il y a beaucoup de répétition dans notre code, nous avons donc choisi de commenter Chambre, MenuPrincipalFrancais,
+// MenuSlection, ChoixLangue et Ecrire
+
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.support.v7.app.AppCompatActivity;
@@ -34,8 +37,9 @@ public class MenuSelection extends AppCompatActivity {
             case Configuration.ORIENTATION_PORTRAIT:
                 setContentView(R.layout.menu_selection_vertical);
 
-
 // Chambre---------------------------------------------------------------------------------------------------------------------------------------
+                //Je commente exclusivement Chambre car les autres pièces sont des répétitions
+
                 //initialisation du bouton On et de son listeneur vers l'activity Chambre
                 chambreon = findViewById(R.id.chambre);
                 chambreon.setOnClickListener(new View.OnClickListener() {
@@ -424,12 +428,63 @@ public class MenuSelection extends AppCompatActivity {
             setContentView(R.layout.menu_selection_horizontal);
         } else if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
             setContentView(R.layout.menu_selection_vertical);
-
         }
+//======================= REPETITION ANTI BUG DES BOUTONS ===================================================================
+// un bug rendant les boutons inutilisables en cas de rotation. Ceci est une solution contre
+
+        chambreon = findViewById(R.id.chambre);
+        chambreon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                visualiser_la_suite();
+
+            }
+        });
+
+        cuisineon = findViewById(R.id.cuisine);
+        cuisineon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                visualiser_la_suite2();
+            }
+        });
+
+        jardinon = findViewById(R.id.jardin);
+        jardinon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                visualiser_la_suite3();
+            }
+        });
+
+        jeuon = findViewById(R.id.jeu);
+        jeuon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                visualiser_la_suite4();
+            }
+        });
+
+        salledebainon = findViewById(R.id.salledebain);
+        salledebainon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                visualiser_la_suite5();
+            }
+        });
+
+        salonon = findViewById(R.id.salon);
+        salonon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                visualiser_la_suite6();
+            }
+        });
+//===========================================================================================================================
     }
 
 
-    // creation de fonction pour acceder au activity correspondante
+    // creation des fonctions pour acceder aux activity correspondantes
     private void visualiser_la_suite() {
         Intent intent = new Intent(MenuSelection.this, Chambre.class);
         startActivity(intent);
