@@ -32,7 +32,6 @@ public class EcrireAnglais extends AppCompatActivity{
         origineanglais=findViewById(R.id.origine);
         texteanglais=findViewById(R.id.texte);
         boutonRetouranglais = findViewById(R.id.boutonRetour);
-        notif_litanglais =findViewById(R.id.notif_lit);
 
         Bundle extras = getIntent().getExtras();
         if(extras != null)
