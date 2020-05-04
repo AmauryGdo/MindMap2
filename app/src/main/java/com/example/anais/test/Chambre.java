@@ -17,7 +17,10 @@ public class Chambre extends AppCompatActivity {
 
     //initialisation variable pour les pop-up des notifications
     ImageView notif_lit;
+    ImageView notif_fen_2;
+    ImageView notif_tab;
     SharedPreferences sharedPreferences;
+
 
     @Override
     // Dans le code qui suit nous établissons une action sur les Relative Layout
@@ -35,33 +38,33 @@ public class Chambre extends AppCompatActivity {
                 //Déclaration des variables et association avec le relative layout
                 RelativeLayout lit = findViewById(R.id.lit);
                 lit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(Chambre.this, Ecrire.class); //Changement d'activité vers Ecrire
-                i.putExtra("objetclique", "lit"); //Lorsque l'on clique sur le relativelayout une valeur est envoyée vers la classe Ecrire. A Cette valeur
-                startActivity(i);//est reliée le nom de l'objet associé
-            }
-        });
+                    @Override
+                    public void onClick(View v) {
+                        Intent i = new Intent(Chambre.this, Ecrire.class); //Changement d'activité vers Ecrire
+                        i.putExtra("objetclique", "lit"); //Lorsque l'on clique sur le relativelayout une valeur est envoyée vers la classe Ecrire. A Cette valeur
+                        startActivity(i);//est reliée le nom de l'objet associé
+                    }
+                });
 //================================= FENETRE =======================================================================
                 RelativeLayout fenetre2 = findViewById(R.id.fenetre2);
                 fenetre2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v){
-                Intent i = new Intent(Chambre.this, Ecrire.class);
-                i.putExtra("objetclique", "fenetre");
-                startActivity(i);
-            }
-        });
+                    @Override
+                    public void onClick(View v) {
+                        Intent i = new Intent(Chambre.this, Ecrire.class);
+                        i.putExtra("objetclique", "fenetre");
+                        startActivity(i);
+                    }
+                });
 //================================= TABLEAU =======================================================================
                 RelativeLayout tableau = findViewById(R.id.tableau);
-        tableau.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v){
-                Intent i = new Intent(Chambre.this, Ecrire.class);
-                i.putExtra("objetclique", "tableau"); //Optional parameters
-                startActivity(i);
-            }
-        });
+                tableau.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent i = new Intent(Chambre.this, Ecrire.class);
+                        i.putExtra("objetclique", "tableau"); //Optional parameters
+                        startActivity(i);
+                    }
+                });
                 break;
 
 //---------------------------------- PAYSAGE ------------------------------------------------------------------------
@@ -70,7 +73,7 @@ public class Chambre extends AppCompatActivity {
                 lit = findViewById(R.id.lit); //Liaison entre variable et Bouton
                 lit.setOnClickListener(new View.OnClickListener() {
                     @Override
-                    public void onClick(View v){
+                    public void onClick(View v) {
                         Intent i = new Intent(Chambre.this, Ecrire.class); //Changement d'activité vers Ecrire
                         i.putExtra("objetclique", "lit"); //Lorsque on clique sur le bouton une valeur est envoyé vers la classe Ecrit. A Cette valeur
                         startActivity(i);                                //est reliée le nom de l'objet associé
@@ -81,7 +84,7 @@ public class Chambre extends AppCompatActivity {
                 fenetre2 = findViewById(R.id.fenetre2);
                 fenetre2.setOnClickListener(new View.OnClickListener() {
                     @Override
-                    public void onClick(View v){
+                    public void onClick(View v) {
                         Intent i = new Intent(Chambre.this, Ecrire.class);
                         i.putExtra("objetclique", "fenetre"); //Optional parameters
                         startActivity(i);
@@ -91,30 +94,47 @@ public class Chambre extends AppCompatActivity {
                 tableau = findViewById(R.id.tableau);
                 tableau.setOnClickListener(new View.OnClickListener() {
                     @Override
-                    public void onClick(View v){
+                    public void onClick(View v) {
                         Intent i = new Intent(Chambre.this, Ecrire.class);
                         i.putExtra("objetclique", "tableau"); //Optional parameters
                         startActivity(i);
                     }
                 });
-    }
-    //==================================== DETECTEUR DE NOTE ==============================================================
-        notif_lit =findViewById(R.id.notif_lit); //association variable/image
+        }
+        //==================================== Detecteur de note a la création ==============================================================
+        notif_lit = findViewById(R.id.notif_lit); //association variable/image
+        notif_fen_2 = findViewById(R.id.notif_fen_2);
+        notif_tab = findViewById(R.id.notif_tab);
 
-        sharedPreferences = getBaseContext().getSharedPreferences( "listeDesMemos",MODE_PRIVATE); //récupération de la sharedpreferences de l'activité Ecrire
-        if(sharedPreferences.contains("lit")){
-            String texte = sharedPreferences.getString("lit", null); //On recupere le texte de la key "lit"
-            if(texte != ""){
-                notif_lit.setVisibility(View.VISIBLE); // Si le texte est different de vide, on affiche la notification
-            }
-           if(texte.equals(null) && texte.equals("") ){
-                notif_lit.setVisibility(View.GONE); // Si le texte est vide, on fait disparaitre la notification
-            }
+        sharedPreferences = getBaseContext().getSharedPreferences("listeDesMemos", MODE_PRIVATE); //récupération de la sharedpreferences de l'activité Ecrire
+
+        String texte = sharedPreferences.getString("lit", null); //On recupere le texte de la key "lit"
+        if (!texte.equals("")) {
+            notif_lit.setVisibility(View.VISIBLE); // Si le texte est different de vide, on affiche la notification
+        }
+        if (texte.equals(null) || texte.equals("")) {
+            notif_lit.setVisibility(View.GONE); // Si le texte est vide, on fait disparaitre la notification
+        }
+
+        String texte1 = sharedPreferences.getString("fenetre", null);
+        if (!texte1.equals("")) {
+            notif_fen_2.setVisibility(View.VISIBLE);
+        }
+        if (texte1.equals(null) || texte.equals("")) {
+            notif_fen_2.setVisibility(View.GONE);
+        }
+
+        String texte2 = sharedPreferences.getString("tableau", null);
+        if (!texte1.equals("")) {
+            notif_tab.setVisibility(View.VISIBLE);
+        }
+        if (texte1.equals(null) || texte.equals("")) {
+            notif_tab.setVisibility(View.GONE);
         }
         //============================================================================================================
-        }
+    }
 
-        // Detecteur d'orientation afin de modifier le layout en temps réel
+    // Detecteur d'orientation afin de modifier le layout en temps réel
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
@@ -128,22 +148,30 @@ public class Chambre extends AppCompatActivity {
         }
     }
 
-
+//----------------------------- Detecteur de note en continu----------------------------------------------------------------
     @Override
     protected void onResume() {
         super.onResume();
-        Log.i("info", " on revient sur la chambre");
-
 
         String texte = sharedPreferences.getString("lit", null); //On recupere le texte de la key "lit"
-
-        Log.i("info", " le texte modifie du lit est : " + texte);
-
-        if(!texte.equals("")){
+        if (!texte.equals("")) {
             notif_lit.setVisibility(View.VISIBLE); // Si le texte est different de vide, on affiche la notification
-        }
-        if(texte.equals(null) || texte.equals("") ){
+        } else if (texte.equals(null) || texte.equals("")) {
             notif_lit.setVisibility(View.GONE); // Si le texte est vide, on fait disparaitre la notification
+        }
+
+        String texte1 = sharedPreferences.getString("fenetre", null);
+        if (!texte1.equals("")) {
+            notif_fen_2.setVisibility(View.VISIBLE);
+        } else if (texte1.equals(null) || texte.equals("")) {
+            notif_fen_2.setVisibility(View.GONE);
+        }
+
+        String texte2 = sharedPreferences.getString("tableau", null);
+        if (!texte2.equals("")) {
+            notif_tab.setVisibility(View.VISIBLE);
+        } else if (texte2.equals(null) || texte.equals("")) {
+            notif_tab.setVisibility(View.GONE);
         }
     }
 }
