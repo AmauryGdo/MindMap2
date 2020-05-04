@@ -3,6 +3,7 @@ package com.example.anais.test;
 // Il y a beaucoup de répétition dans notre code, nous avons donc choisi de commenter Chambre, MenuPrincipalFrancais,
 // MenuSlection, ChoixLangue et Ecrire
 
+import android.annotation.SuppressLint;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -22,6 +23,7 @@ public class Ecrire extends AppCompatActivity{
     SharedPreferences sharedPreferences; // declaration de la sharedpreferences associée au stockage du texte
 
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

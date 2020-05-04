@@ -1,5 +1,6 @@
 package com.example.anais.test;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
@@ -9,15 +10,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
-import android.widget.Switch;
 import android.widget.TextView;
 
 // Il y a beaucoup de répétition dans notre code, nous avons donc choisi de commenter Chambre, MenuPrincipalFrancais,
 // MenuSlection, ChoixLangue et Ecrire
 
 public class EcrireAnglais extends AppCompatActivity{
-    // Définition des variables
-    private Button boutonRetouranglais;
     TextView origineanglais;
     EditText texteanglais;
     String nomObjetanglais;
@@ -25,6 +23,7 @@ public class EcrireAnglais extends AppCompatActivity{
     String litanglais;
     ImageView notif_litanglais;
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,7 +32,8 @@ public class EcrireAnglais extends AppCompatActivity{
         sharedPreferencesanglais= getBaseContext().getSharedPreferences( "listeDesMemos",MODE_PRIVATE); // on définit le tableau associatif
         origineanglais=findViewById(R.id.origine);
         texteanglais=findViewById(R.id.texte);
-        boutonRetouranglais = findViewById(R.id.boutonRetour);
+        // Définition des variables
+        Button boutonRetouranglais = findViewById(R.id.boutonRetour);
 
         Bundle extras = getIntent().getExtras();
         if(extras != null)

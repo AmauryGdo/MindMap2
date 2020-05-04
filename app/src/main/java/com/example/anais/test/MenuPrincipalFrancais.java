@@ -3,9 +3,8 @@ package com.example.anais.test;
 // Il y a beaucoup de répétition dans notre code, nous avons donc choisi de commenter Chambre, MenuPrincipalFrancais,
 // MenuSlection, ChoixLangue et Ecrire
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.content.SharedPreferences;
+//import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -17,7 +16,7 @@ public class MenuPrincipalFrancais extends AppCompatActivity {
     private Button memo;
     private Button info;
     private Button langue;
-    SharedPreferences sharedpreferences ; // recupération de la sharedpreferences de Choixlangue
+   // SharedPreferences sharedpreferences ; // recupération de la sharedpreferences de Choixlangue(TEST)
 
     // Ici est dans le menu d'acceuil qui contient trois boutons. Le bouton mem qui mène au choix des pièces et le bouton info pour la description de l'appli
 // et le bouton langue qui permet de retourner au choix des langues.

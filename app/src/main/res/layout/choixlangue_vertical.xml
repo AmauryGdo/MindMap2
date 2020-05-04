@@ -15,7 +15,7 @@
         android:layout_marginBottom="8dp"
         android:background="@drawable/custom_button1"
 
-        android:text="English"
+        android:text="@string/english"
         android:textAppearance="@android:style/TextAppearance.Material.Widget.ActionBar.Title"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,7 +32,7 @@
         android:layout_marginBottom="8dp"
         android:background="@drawable/custom_button1"
 
-        android:text="Francais"
+        android:text="@string/francais"
         android:textAppearance="@android:style/TextAppearance.Material.Widget.ActionBar.Title"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
