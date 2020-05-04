@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -58,13 +59,17 @@ public class Ecrire extends AppCompatActivity{
                 // on sauvegarde le texte dans sharedPreferences
                 sharedPreferences.edit().putString(nomObjet, texte.getText().toString()).apply();
 
-
+/*
                 Intent intent = new Intent(Ecrire.this, MenuSelection.class); // et on revient au menu
                 startActivity(intent);
+                */
+                finish();
+
             }
         });
 
     }
+
 
 }
 
