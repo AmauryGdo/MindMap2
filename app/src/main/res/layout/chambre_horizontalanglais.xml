@@ -23,7 +23,7 @@
         app:srcCompat="@drawable/chambre1" />
 
     <RelativeLayout
-        android:id="@+id/bed"
+        android:id="@+id/lit"
         android:layout_width="276dp"
         android:layout_height="87dp"
         android:layout_marginStart="296dp"
