@@ -27,13 +27,13 @@ public class EcrireAnglais extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ecrire);
+        setContentView(R.layout.activity_ecrireanglais);
 
         sharedPreferencesanglais= getBaseContext().getSharedPreferences( "listeDesMemos",MODE_PRIVATE); // on définit le tableau associatif
-        origineanglais=findViewById(R.id.origine);
-        texteanglais=findViewById(R.id.texte);
+        origineanglais=findViewById(R.id.origineanglais);
+        texteanglais=findViewById(R.id.texteanglais);
         // Définition des variables
-        Button boutonRetouranglais = findViewById(R.id.boutonRetour);
+        Button boutonRetouranglais = findViewById(R.id.boutonRetouranglais);
 
         Bundle extras = getIntent().getExtras();
         if(extras != null)
