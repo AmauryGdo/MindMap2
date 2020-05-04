@@ -131,20 +131,41 @@ public class Chambre extends AppCompatActivity {
         if (texte1.equals(null) || texte.equals("")) {
             notif_tab.setVisibility(View.GONE);
         }
-        //============================================================================================================
     }
 
-    // Detecteur d'orientation afin de modifier le layout en temps réel
+    //=================== Detecteur d'orientation afin de modifier le layout en temps réel=====================================
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
 
-        // Checks the orientation of the screen
         if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
             setContentView(R.layout.chambre_horizontal);
         } else if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
             setContentView(R.layout.chambre_vertical);
+        }
+//====================Detecteur de note au changement d'orientation=============================================================
+        //Il y avait une inconsistance des notifications lors du passage d'une orientation a une autre
+        //Si on modifiait les notes et que l'on revenait a l'orientation précedente, les notifications bug
 
+        String texte = sharedPreferences.getString("lit", null); //On recupere le texte de la key "lit"
+        if (!texte.equals("")) {
+            notif_lit.setVisibility(View.VISIBLE); // Si le texte est different de vide, on affiche la notification
+        } else if (texte.equals(null) || texte.equals("")) {
+            notif_lit.setVisibility(View.GONE); // Si le texte est vide, on fait disparaitre la notification
+        }
+
+        String texte1 = sharedPreferences.getString("fenetre", null);
+        if (!texte1.equals("")) {
+            notif_fen_2.setVisibility(View.VISIBLE);
+        } else if (texte1.equals(null) || texte.equals("")) {
+            notif_fen_2.setVisibility(View.GONE);
+        }
+
+        String texte2 = sharedPreferences.getString("tableau", null);
+        if (!texte2.equals("")) {
+            notif_tab.setVisibility(View.VISIBLE);
+        } else if (texte2.equals(null) || texte.equals("")) {
+            notif_tab.setVisibility(View.GONE);
         }
     }
 
