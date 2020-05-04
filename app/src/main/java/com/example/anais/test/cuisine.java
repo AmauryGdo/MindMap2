@@ -21,7 +21,7 @@ public class cuisine extends AppCompatActivity {
     ImageView notif_orange;
     ImageView notif_corb;
     ImageView notif_armo1;
-    SharedPreferences sharedPreferences1;
+    SharedPreferences sharedPreferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -202,11 +202,16 @@ public class cuisine extends AppCompatActivity {
         notif_frig = findViewById(R.id.notif_frig); //association variable/image
         notif_chat1 = findViewById(R.id.notif_chat1);
         notif_plant1 = findViewById(R.id.notif_plant1);
+        notif_four1 = findViewById(R.id.notif_four1);
+        notif_fen1 = findViewById(R.id.notif_fen1);
+        notif_orange = findViewById(R.id.notif_orange);
+        notif_corb = findViewById(R.id.notif_corb);
+        notif_armo1 = findViewById(R.id.notif_armo1);
 
-        sharedPreferences1 = getBaseContext().getSharedPreferences("listeDesMemos", MODE_PRIVATE); //récupération de la sharedpreferences de l'activité Ecrire
+        sharedPreferences = getBaseContext().getSharedPreferences("listeDesMemos", MODE_PRIVATE); //récupération de la sharedpreferences de l'activité Ecrire
 
-        if (sharedPreferences1.contains("frigo")) {
-            String texte = sharedPreferences1.getString("frigo", null);
+        if (sharedPreferences.contains("frigo")) {
+            String texte = sharedPreferences.getString("frigo", null);
             assert texte != null;
             if (!texte.equals("")) {
                 notif_frig.setVisibility(View.VISIBLE);
@@ -214,8 +219,8 @@ public class cuisine extends AppCompatActivity {
                 notif_frig.setVisibility(View.GONE);
             }
         }
-        if (sharedPreferences1.contains("chat")) {
-            String texte1 = sharedPreferences1.getString("chat", null);
+        if (sharedPreferences.contains("chat")) {
+            String texte1 = sharedPreferences.getString("chat", null);
             assert texte1 != null;
             if (!texte1.equals("")) {
                 notif_chat1.setVisibility(View.VISIBLE);
@@ -223,13 +228,58 @@ public class cuisine extends AppCompatActivity {
                 notif_chat1.setVisibility(View.GONE);
             }
         }
-        if (sharedPreferences1.contains("plante")) {
-            String texte2 = sharedPreferences1.getString("plante", null);
+        if (sharedPreferences.contains("plante")) {
+            String texte2 = sharedPreferences.getString("plante", null);
             assert texte2 != null;
             if (!texte2.equals("")) {
                 notif_plant1.setVisibility(View.VISIBLE);
             } else {
                 notif_plant1.setVisibility(View.GONE);
+            }
+        }
+        if (sharedPreferences.contains("four")) {
+            String texte3 = sharedPreferences.getString("four", null);
+            assert texte3 != null;
+            if (!texte3.equals("")) {
+                notif_four1.setVisibility(View.VISIBLE);
+            } else {
+                notif_four1.setVisibility(View.GONE);
+            }
+        }
+        if (sharedPreferences.contains("fenetre")) {
+            String texte4 = sharedPreferences.getString("fenetre", null);
+            assert texte4!= null;
+            if (!texte4.equals("")) {
+                notif_fen1.setVisibility(View.VISIBLE);
+            } else {
+                notif_fen1.setVisibility(View.GONE);
+            }
+        }
+        if (sharedPreferences.contains("orange")) {
+            String texte5 = sharedPreferences.getString("orange", null);
+            assert texte5 != null;
+            if (!texte5.equals("")) {
+                notif_orange.setVisibility(View.VISIBLE);
+            } else {
+                notif_orange.setVisibility(View.GONE);
+            }
+        }
+        if (sharedPreferences.contains("corbeille")) {
+            String texte6 = sharedPreferences.getString("corbeille", null);
+            assert texte6!= null;
+            if (!texte6.equals("")) {
+                notif_corb.setVisibility(View.VISIBLE);
+            } else {
+                notif_corb.setVisibility(View.GONE);
+            }
+        }
+        if (sharedPreferences.contains("armoire")) {
+            String texte7 = sharedPreferences.getString("armoire", null);
+            assert texte7 != null;
+            if (!texte7.equals("")) {
+                notif_armo1.setVisibility(View.VISIBLE);
+            } else {
+                notif_armo1.setVisibility(View.GONE);
             }
         }
     }
@@ -243,7 +293,155 @@ public class cuisine extends AppCompatActivity {
             setContentView(R.layout.cuisine_horizontal);
         } else if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
             setContentView(R.layout.cuisine_vertical);
+        }
+        if (sharedPreferences.contains("frigo")) {
+            String texte = sharedPreferences.getString("frigo", null);
+            assert texte != null;
+            if (!texte.equals("")) {
+                notif_frig.setVisibility(View.VISIBLE);
+            } else {
+                notif_frig.setVisibility(View.GONE);
+            }
+        }
+        if (sharedPreferences.contains("chat")) {
+            String texte1 = sharedPreferences.getString("chat", null);
+            assert texte1 != null;
+            if (!texte1.equals("")) {
+                notif_chat1.setVisibility(View.VISIBLE);
+            } else {
+                notif_chat1.setVisibility(View.GONE);
+            }
+        }
+        if (sharedPreferences.contains("plante")) {
+            String texte2 = sharedPreferences.getString("plante", null);
+            assert texte2 != null;
+            if (!texte2.equals("")) {
+                notif_plant1.setVisibility(View.VISIBLE);
+            } else {
+                notif_plant1.setVisibility(View.GONE);
+            }
+        }
+        if (sharedPreferences.contains("four")) {
+            String texte3 = sharedPreferences.getString("four", null);
+            assert texte3 != null;
+            if (!texte3.equals("")) {
+                notif_four1.setVisibility(View.VISIBLE);
+            } else {
+                notif_four1.setVisibility(View.GONE);
+            }
+        }
+        if (sharedPreferences.contains("fenetre")) {
+            String texte4 = sharedPreferences.getString("fenetre", null);
+            assert texte4!= null;
+            if (!texte4.equals("")) {
+                notif_fen1.setVisibility(View.VISIBLE);
+            } else {
+                notif_fen1.setVisibility(View.GONE);
+            }
+        }
+        if (sharedPreferences.contains("orange")) {
+            String texte5 = sharedPreferences.getString("orange", null);
+            assert texte5 != null;
+            if (!texte5.equals("")) {
+                notif_orange.setVisibility(View.VISIBLE);
+            } else {
+                notif_orange.setVisibility(View.GONE);
+            }
+        }
+        if (sharedPreferences.contains("corbeille")) {
+            String texte6 = sharedPreferences.getString("corbeille", null);
+            assert texte6!= null;
+            if (!texte6.equals("")) {
+                notif_corb.setVisibility(View.VISIBLE);
+            } else {
+                notif_corb.setVisibility(View.GONE);
+            }
+        }
+        if (sharedPreferences.contains("armoire")) {
+            String texte7 = sharedPreferences.getString("armoire", null);
+            assert texte7 != null;
+            if (!texte7.equals("")) {
+                notif_armo1.setVisibility(View.VISIBLE);
+            } else {
+                notif_armo1.setVisibility(View.GONE);
+            }
+        }
+    }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (sharedPreferences.contains("frigo")) {
+            String texte = sharedPreferences.getString("frigo", null);
+            assert texte != null;
+            if (!texte.equals("")) {
+                notif_frig.setVisibility(View.VISIBLE);
+            } else {
+                notif_frig.setVisibility(View.GONE);
+            }
+        }
+        if (sharedPreferences.contains("chat")) {
+            String texte1 = sharedPreferences.getString("chat", null);
+            assert texte1 != null;
+            if (!texte1.equals("")) {
+                notif_chat1.setVisibility(View.VISIBLE);
+            } else {
+                notif_chat1.setVisibility(View.GONE);
+            }
+        }
+        if (sharedPreferences.contains("plante")) {
+            String texte2 = sharedPreferences.getString("plante", null);
+            assert texte2 != null;
+            if (!texte2.equals("")) {
+                notif_plant1.setVisibility(View.VISIBLE);
+            } else {
+                notif_plant1.setVisibility(View.GONE);
+            }
+        }
+        if (sharedPreferences.contains("four")) {
+            String texte3 = sharedPreferences.getString("four", null);
+            assert texte3 != null;
+            if (!texte3.equals("")) {
+                notif_four1.setVisibility(View.VISIBLE);
+            } else {
+                notif_four1.setVisibility(View.GONE);
+            }
+        }
+        if (sharedPreferences.contains("fenetre")) {
+            String texte4 = sharedPreferences.getString("fenetre", null);
+            assert texte4!= null;
+            if (!texte4.equals("")) {
+                notif_fen1.setVisibility(View.VISIBLE);
+            } else {
+                notif_fen1.setVisibility(View.GONE);
+            }
+        }
+        if (sharedPreferences.contains("orange")) {
+            String texte5 = sharedPreferences.getString("orange", null);
+            assert texte5 != null;
+            if (!texte5.equals("")) {
+                notif_orange.setVisibility(View.VISIBLE);
+            } else {
+                notif_orange.setVisibility(View.GONE);
+            }
+        }
+        if (sharedPreferences.contains("corbeille")) {
+            String texte6 = sharedPreferences.getString("corbeille", null);
+            assert texte6!= null;
+            if (!texte6.equals("")) {
+                notif_corb.setVisibility(View.VISIBLE);
+            } else {
+                notif_corb.setVisibility(View.GONE);
+            }
+        }
+        if (sharedPreferences.contains("armoire")) {
+            String texte7 = sharedPreferences.getString("armoire", null);
+            assert texte7 != null;
+            if (!texte7.equals("")) {
+                notif_armo1.setVisibility(View.VISIBLE);
+            } else {
+                notif_armo1.setVisibility(View.GONE);
+            }
         }
     }
 }
