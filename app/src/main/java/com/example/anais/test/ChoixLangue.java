@@ -67,7 +67,7 @@ public class ChoixLangue extends AppCompatActivity {
 //=======================================================================================
 
             case Configuration.ORIENTATION_LANDSCAPE: // Similaire mais en mode horizontal
-                setContentView(R.layout.chambre_horizontal);
+                setContentView(R.layout.choixlangue_horizontal);
                 anglais = findViewById(R.id.boutonanglais);
                 anglais.setOnClickListener(new View.OnClickListener() {
                     @Override

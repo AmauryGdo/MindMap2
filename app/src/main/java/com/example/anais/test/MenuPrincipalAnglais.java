@@ -1,8 +1,6 @@
 package com.example.anais.test;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,7 +12,8 @@ public class MenuPrincipalAnglais extends AppCompatActivity {
     private Button memoanglais;
     private Button infoanglais;
     private Button langue;
-    SharedPreferences sharedpreferences ;
+    private Button langueanglais;
+    //SharedPreferences sharedpreferences ;
     // Ici est dans le menu d'acceuil qui contient deux boutons. Le bouton mem qui mène au choix des pièces et le bouton info pour la description de l'appli
 
 
@@ -69,8 +68,8 @@ public class MenuPrincipalAnglais extends AppCompatActivity {
                     }
                 });
 
-                langue = findViewById(R.id.Langueanglais);
-                langue.setOnClickListener(new View.OnClickListener() {
+                langueanglais = findViewById(R.id.Langueanglais);
+                langueanglais.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         visualiser_la_suite3(); }
@@ -83,7 +82,6 @@ public class MenuPrincipalAnglais extends AppCompatActivity {
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
 
-        // Checks the orientation of the screen
         if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
             setContentView(R.layout.menu_principal_horizontalanglais);
 
@@ -92,7 +90,6 @@ public class MenuPrincipalAnglais extends AppCompatActivity {
 
         }
         memoanglais = findViewById(R.id.boutonMemanglais);
-        infoanglais = findViewById(R.id.inforanglais);
         memoanglais.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -111,6 +108,13 @@ public class MenuPrincipalAnglais extends AppCompatActivity {
 
         langue = findViewById(R.id.Langue);
         langue.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                visualiser_la_suite3(); }
+        });
+
+        langueanglais = findViewById(R.id.Langueanglais);
+        langueanglais.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 visualiser_la_suite3(); }
