@@ -19,7 +19,8 @@ public class MenuPrincipalFrancais extends AppCompatActivity {
     private Button langue;
     SharedPreferences sharedpreferences ; // recupération de la sharedpreferences de Choixlangue
 
-    // Ici est dans le menu d'acceuil qui contient deux boutons. Le bouton mem qui mène au choix des pièces et le bouton info pour la description de l'appli
+    // Ici est dans le menu d'acceuil qui contient trois boutons. Le bouton mem qui mène au choix des pièces et le bouton info pour la description de l'appli
+// et le bouton langue qui permet de retourner au choix des langues.
 
 
     @Override

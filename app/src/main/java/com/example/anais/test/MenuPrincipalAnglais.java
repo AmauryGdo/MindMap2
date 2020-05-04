@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+// Il y a beaucoup de répétition dans notre code, nous avons donc choisi de commenter Chambre, MenuPrincipalFrancais,
+// MenuSlection, ChoixLangue et Ecrire
+
 public class MenuPrincipalAnglais extends AppCompatActivity {
     // définition variable de type bouton
     private Button memoanglais;

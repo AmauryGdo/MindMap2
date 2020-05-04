@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 
 public class MenuSelection extends AppCompatActivity {
+    //declaration des variables pour les boutons
     private ImageButton chambreon;
     private ImageButton chambreoff;
     private ImageButton cuisineon;
@@ -31,7 +32,7 @@ public class MenuSelection extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        switch (getResources().getConfiguration().orientation) {
+        switch (getResources().getConfiguration().orientation) { //permet de recuperer l'orientation du telephone des l'ouverture de l'activity
 //================================================VERTICALE====================================================================
 
             case Configuration.ORIENTATION_PORTRAIT:

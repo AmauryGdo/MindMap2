@@ -112,7 +112,7 @@ public class Chambre extends AppCompatActivity {
             if (!texte.equals("")) {
                 notif_lit.setVisibility(View.VISIBLE); // Si le texte est different de vide, on affiche la notification
             } else {
-                notif_lit.setVisibility(View.GONE); // Si le texte est vide, on fait disparaitre la notification
+                notif_lit.setVisibility(View.GONE); // Sinon on fait disparaitre la notification
             }
         }
         if (sharedPreferences.contains("fenetre")) {

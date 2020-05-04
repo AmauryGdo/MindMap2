@@ -7,7 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
 
-// Il y a beaucoup de répétition dans notre code j'ai donc choisi de commenter Chambre, Main Activité, Choix Pièce et Ecrire
+// Il y a beaucoup de répétition dans notre code, nous avons donc choisi de commenter Chambre, MenuPrincipalFrancais,
+// MenuSlection, ChoixLangue et Ecrire
+
 public class jeuAnglais extends AppCompatActivity {
 
     //Nous sommes dans la salle de jeu et elle contient 4 zones clicables

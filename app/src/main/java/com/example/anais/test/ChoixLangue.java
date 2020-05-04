@@ -135,7 +135,20 @@ public class ChoixLangue extends AppCompatActivity {
             Intent intent2 = new Intent(ChoixLangue.this, MenuPrincipalFrancais.class);
         startActivity(intent2);
     }
-
+//Apres une serie de test, l'activity ne semble pas prendre en compte les conditions dans le Oncreate...
+    //Il doit m'echapper encore une fois un petit quelque chose
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if(sharedpreferences.contains("francais")){ //A l'ouverture, si "ma_langue" contient francais, on ouvre l'activité francaise
+            Intent intent = new Intent(ChoixLangue.this, MenuPrincipalFrancais.class);
+            startActivity(intent);
+        }
+        if(sharedpreferences.contains("anglais")){ // Inversement en Anglais
+            Intent intent = new Intent(ChoixLangue.this, MenuPrincipalAnglais.class);
+            startActivity(intent);
+        }
+    }
 }
 
 

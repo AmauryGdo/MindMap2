@@ -1,5 +1,8 @@
 package com.example.anais.test;
 
+// Il y a beaucoup de répétition dans notre code, nous avons donc choisi de commenter Chambre, MenuPrincipalFrancais,
+// MenuSlection, ChoixLangue et Ecrire
+
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
@@ -10,7 +13,6 @@ import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
-// Il y a beaucoup de répétition dans notre code j'ai donc choisi de commenter Chambre, Main Activité, Choix Pièce et Ecrire
 public class cuisine extends AppCompatActivity {
 
     ImageView notif_frig;

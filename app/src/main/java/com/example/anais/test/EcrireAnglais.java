@@ -11,8 +11,10 @@ import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import android.widget.Switch;
 import android.widget.TextView;
-// Il y a beaucoup de répétition dans notre code j'ai donc choisi de commenter Chambre, Main Activité, Choix Pièce et Ecrire
-//Nous sommes dans l'activité qui permet à l'utilisateur de saisir le texte qu'il veut faire mémoriser dans un objet
+
+// Il y a beaucoup de répétition dans notre code, nous avons donc choisi de commenter Chambre, MenuPrincipalFrancais,
+// MenuSlection, ChoixLangue et Ecrire
+
 public class EcrireAnglais extends AppCompatActivity{
     // Définition des variables
     private Button boutonRetouranglais;

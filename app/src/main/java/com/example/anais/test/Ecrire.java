@@ -15,10 +15,11 @@ import android.widget.TextView;
 //Nous sommes dans l'activité qui permet à l'utilisateur de saisir le texte qu'il veut faire mémoriser dans un objet
 
 public class Ecrire extends AppCompatActivity{
+    //declaration des variables
     TextView origine;
     EditText texte;
     String nomObjet;
-    SharedPreferences sharedPreferences;
+    SharedPreferences sharedPreferences; // declaration de la sharedpreferences associée au stockage du texte
 
 
     @Override
@@ -27,19 +28,19 @@ public class Ecrire extends AppCompatActivity{
         setContentView(R.layout.activity_ecrire);
 
         sharedPreferences= getBaseContext().getSharedPreferences( "listeDesMemos",MODE_PRIVATE); // on définit le tableau associatif
-        // Association des variables à des objets
-        origine=findViewById(R.id.origine);
-        texte=findViewById(R.id.texte);
-        // Définition des variables
+        // Association des variables aux objets
+        origine=findViewById(R.id.origine); //zone de visualisation du texte correspondant a l'objet ou on enregistre le texte
+        texte=findViewById(R.id.texte);//zone de texte pour saisir le texte et afficher celui deja enregistré(s'il y en a eu)
+        // Définition et association du bouton retour
         Button boutonRetour = findViewById(R.id.boutonRetour);
 
 
         Bundle extras = getIntent().getExtras();
         if(extras != null)
-        { nomObjet= extras.getString("objetclique"); // on stocke la valeur envoyée dans une variable nomObjet
+        { nomObjet= extras.getString("objetclique"); // on stocke la valeur envoyée lors du clique sur l'objet dans une variable nomObjet
             origine.setText("Vous enregistrez dans l'objet:"+nomObjet); //On affiche que le texte est bien mémorisé dans l'objet cliqué
             if(sharedPreferences.contains(nomObjet)){  //condition vérifiant si une donnée a déjà été stockée
-                String textememorise = sharedPreferences.getString(nomObjet, null);
+                String textememorise = sharedPreferences.getString(nomObjet, null); // on recupere le texte enregistré
                 System.out.println(textememorise);
                 texte.setText(textememorise);
 
@@ -52,7 +53,7 @@ public class Ecrire extends AppCompatActivity{
                 // on sauvegarde le texte dans sharedPreferences
                 sharedPreferences.edit().putString(nomObjet, texte.getText().toString()).apply();
 
-                finish();
+                finish(); // fermer l'activity et permet de pas la laisser ouverte en arriere plan
 
             }
         });
