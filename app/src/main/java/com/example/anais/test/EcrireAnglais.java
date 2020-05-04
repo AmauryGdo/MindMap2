@@ -20,8 +20,7 @@ public class EcrireAnglais extends AppCompatActivity{
     EditText texteanglais;
     String nomObjetanglais;
     SharedPreferences sharedPreferencesanglais;
-    String litanglais;
-    ImageView notif_litanglais;
+
 
     @SuppressLint("SetTextI18n")
     @Override
@@ -51,9 +50,7 @@ public class EcrireAnglais extends AppCompatActivity{
             public void onClick(View v) {  //Lorsque on clique sur le bouton retour on met à jour la mémoire
                 // on sauvegarde le texte dans sharedPreferences
                 sharedPreferencesanglais.edit().putString(nomObjetanglais, texteanglais.getText().toString()).apply();
-                if (sharedPreferencesanglais.contains(litanglais)) {
-                    notif_litanglais.setVisibility(View.VISIBLE);
-                }
+
                 finish();
             }
         });
