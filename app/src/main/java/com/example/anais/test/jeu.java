@@ -45,7 +45,7 @@ public class jeu extends AppCompatActivity {
                 });
 
 
-                RelativeLayout xylophone = findViewById(R.id.table);
+                RelativeLayout xylophone = findViewById(R.id.xylophone);
                 xylophone.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -95,7 +95,7 @@ public class jeu extends AppCompatActivity {
                 });
 
 
-                xylophone = findViewById(R.id.table);
+                xylophone = findViewById(R.id.xylophone);
                 xylophone.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
