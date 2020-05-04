@@ -51,12 +51,10 @@ public class EcrireAnglais extends AppCompatActivity{
             public void onClick(View v) {  //Lorsque on clique sur le bouton retour on met à jour la mémoire
                 // on sauvegarde le texte dans sharedPreferences
                 sharedPreferencesanglais.edit().putString(nomObjetanglais, texteanglais.getText().toString()).apply();
-                if (sharedPreferencesanglais.contains(litanglais)){
+                if (sharedPreferencesanglais.contains(litanglais)) {
                     notif_litanglais.setVisibility(View.VISIBLE);
                 }
-
-                Intent intent = new Intent(EcrireAnglais.this, MenuSelectionAnglais.class); // et on revient au menu
-                startActivity(intent);
+                finish();
             }
         });
 
