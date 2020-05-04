@@ -54,7 +54,9 @@
             android:contentDescription="@string/notification"
             app:srcCompat="@drawable/notification"
             android:visibility="gone"/>
+
     </RelativeLayout>
+
 
     <RelativeLayout
         android:id="@+id/tableau"
@@ -64,6 +66,7 @@
         android:layout_marginTop="315dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
         <ImageView
             android:id="@+id/notif_tab"
             android:layout_width="43dp"
@@ -73,4 +76,6 @@
             app:srcCompat="@drawable/notification"
             android:visibility="gone"/>
     </RelativeLayout>
+
+
 </android.support.constraint.ConstraintLayout>

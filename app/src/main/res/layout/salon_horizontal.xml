@@ -33,6 +33,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.581">
 
+        <ImageView
+            android:id="@+id/notif_telefr"
+            android:layout_width="43dp"
+            android:layout_height="44dp"
+            android:adjustViewBounds="false"
+            android:contentDescription="@string/notification"
+            android:visibility="gone"
+            app:srcCompat="@drawable/notification"
+            tools:ignore="DuplicateIds" />
+
     </RelativeLayout>
 
 
@@ -50,6 +60,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.537">
+
+        <ImageView
+            android:id="@+id/notif_buisson2fr"
+            android:layout_width="43dp"
+            android:layout_height="44dp"
+            android:adjustViewBounds="false"
+            android:contentDescription="@string/notification"
+            android:visibility="gone"
+            app:srcCompat="@drawable/notification"
+            tools:ignore="DuplicateIds" />
 
     </RelativeLayout>
 
@@ -69,6 +89,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.465">
 
+
+        <ImageView
+            android:id="@+id/notif_tablebassefr"
+            android:layout_width="43dp"
+            android:layout_height="44dp"
+            android:adjustViewBounds="false"
+            android:contentDescription="@string/notification"
+            android:visibility="gone"
+            app:srcCompat="@drawable/notification"
+            tools:ignore="DuplicateIds" />
+
     </RelativeLayout>
 
     <RelativeLayout
@@ -86,6 +117,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.45">
 
+        <ImageView
+            android:id="@+id/notif_canapefr"
+            android:layout_width="43dp"
+            android:layout_height="44dp"
+            android:adjustViewBounds="false"
+            android:contentDescription="@string/notification"
+            android:visibility="gone"
+            app:srcCompat="@drawable/notification"
+            tools:ignore="DuplicateIds" />
+
+
     </RelativeLayout>
 
     <RelativeLayout
@@ -102,6 +144,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.481">
+
+
+        <ImageView
+            android:id="@+id/notif_lampe2fr"
+            android:layout_width="43dp"
+            android:layout_height="44dp"
+            android:adjustViewBounds="false"
+            android:contentDescription="@string/notification"
+            android:visibility="gone"
+            app:srcCompat="@drawable/notification"
+            tools:ignore="DuplicateIds" />
 
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
