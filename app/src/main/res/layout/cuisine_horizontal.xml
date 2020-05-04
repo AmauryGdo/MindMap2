@@ -28,7 +28,15 @@
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
+        <ImageView
+            android:id="@+id/notif_frig"
+            android:layout_width="43dp"
+            android:layout_height="44dp"
+            android:adjustViewBounds="false"
+            android:contentDescription="@string/notification"
+            android:visibility="gone"
+            app:srcCompat="@drawable/notification"
+            />
     </RelativeLayout>
 
     <RelativeLayout
@@ -39,7 +47,15 @@
         android:layout_marginTop="256dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
+        <ImageView
+            android:id="@+id/notif_chat1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:adjustViewBounds="false"
+            android:contentDescription="@string/notification"
+            android:visibility="gone"
+            app:srcCompat="@drawable/notification"
+            />
     </RelativeLayout>
 
 
@@ -47,12 +63,19 @@
         android:id="@+id/plante1"
         android:layout_width="40dp"
         android:layout_height="67dp"
-
         android:layout_marginStart="180dp"
         android:layout_marginTop="128dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
+        <ImageView
+            android:id="@+id/notif_plant1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:adjustViewBounds="false"
+            android:contentDescription="@string/notification"
+            android:visibility="gone"
+            app:srcCompat="@drawable/notification"
+            />
     </RelativeLayout>
 
     <RelativeLayout
@@ -70,6 +93,15 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.51">
 
+        <ImageView
+            android:id="@+id/notif_four1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:adjustViewBounds="false"
+            android:contentDescription="@string/notification"
+            android:visibility="gone"
+            app:srcCompat="@drawable/notification"
+            />
     </RelativeLayout>
 
     <RelativeLayout
@@ -80,6 +112,15 @@
         android:layout_marginTop="128dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/notif_fen1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:adjustViewBounds="false"
+            android:contentDescription="@string/notification"
+            android:visibility="gone"
+            app:srcCompat="@drawable/notification"
+            />
 
     </RelativeLayout>
 
@@ -91,7 +132,15 @@
         android:layout_marginTop="100dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
+        <ImageView
+            android:id="@+id/notif_orange"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:adjustViewBounds="false"
+            android:contentDescription="@string/notification"
+            android:visibility="gone"
+            app:srcCompat="@drawable/notification"
+            />
     </RelativeLayout>
 
     <RelativeLayout
@@ -102,7 +151,15 @@
         android:layout_marginTop="152dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
+        <ImageView
+            android:id="@+id/notif_corb"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:adjustViewBounds="false"
+            android:contentDescription="@string/notification"
+            android:visibility="gone"
+            app:srcCompat="@drawable/notification"
+            />
     </RelativeLayout>
 
     <RelativeLayout
@@ -113,6 +170,14 @@
         android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
+        <ImageView
+            android:id="@+id/notif_armo1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:adjustViewBounds="false"
+            android:contentDescription="@string/notification"
+            android:visibility="gone"
+            app:srcCompat="@drawable/notification"
+            />
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
