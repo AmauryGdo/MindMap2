@@ -8,7 +8,6 @@ import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -33,7 +32,7 @@ public class Chambre extends AppCompatActivity {
             case Configuration.ORIENTATION_PORTRAIT:
                 setContentView(R.layout.chambre_vertical);
 //=============================== LIT ============================================================================
-                //Le code est très repetitif donc je commente uniquement l'objet "li"
+                //Le code est très repetitif donc je commente uniquement l'objet "lit"
 
                 //Déclaration des variables et association avec le relative layout
                 RelativeLayout lit = findViewById(R.id.lit);
@@ -133,7 +132,7 @@ public class Chambre extends AppCompatActivity {
         }
     }
 
-    //=================== Detecteur d'orientation afin de modifier le layout en temps réel=====================================
+    //=================== Detecteur d'orientation afin de modifier le layout en temps réel =====================================
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
@@ -143,15 +142,15 @@ public class Chambre extends AppCompatActivity {
         } else if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
             setContentView(R.layout.chambre_vertical);
         }
-//====================Detecteur de note au changement d'orientation=============================================================
-        //Il y avait une inconsistance des notifications lors du passage d'une orientation a une autre
-        //Si on modifiait les notes et que l'on revenait a l'orientation précedente, les notifications bug
+//====================Detecteur de note au changement d'orientation =============================================================
+        //Il y avait une inconsistance des notifications lors du passage d'une orientation à une autre
+        //Si on modifiait les notes et que l'on revenait à l'orientation précedente, les notifications bug
 
-        String texte = sharedPreferences.getString("lit", null); //On recupere le texte de la key "lit"
+        String texte = sharedPreferences.getString("lit", null);
         if (!texte.equals("")) {
-            notif_lit.setVisibility(View.VISIBLE); // Si le texte est different de vide, on affiche la notification
+            notif_lit.setVisibility(View.VISIBLE);
         } else if (texte.equals(null) || texte.equals("")) {
-            notif_lit.setVisibility(View.GONE); // Si le texte est vide, on fait disparaitre la notification
+            notif_lit.setVisibility(View.GONE);
         }
 
         String texte1 = sharedPreferences.getString("fenetre", null);
@@ -170,15 +169,16 @@ public class Chambre extends AppCompatActivity {
     }
 
 //----------------------------- Detecteur de note en continu----------------------------------------------------------------
+    // Ce callback permet de refresh l'etat des notifications pendant que l'activité est ouverte
     @Override
     protected void onResume() {
         super.onResume();
 
-        String texte = sharedPreferences.getString("lit", null); //On recupere le texte de la key "lit"
+        String texte = sharedPreferences.getString("lit", null);
         if (!texte.equals("")) {
-            notif_lit.setVisibility(View.VISIBLE); // Si le texte est different de vide, on affiche la notification
+            notif_lit.setVisibility(View.VISIBLE);
         } else if (texte.equals(null) || texte.equals("")) {
-            notif_lit.setVisibility(View.GONE); // Si le texte est vide, on fait disparaitre la notification
+            notif_lit.setVisibility(View.GONE);
         }
 
         String texte1 = sharedPreferences.getString("fenetre", null);
