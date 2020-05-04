@@ -149,28 +149,32 @@ public class Chambre extends AppCompatActivity {
         //Il y avait une inconsistance des notifications lors du passage d'une orientation à une autre
         //Si on modifiait les notes et que l'on revenait à l'orientation précedente, les notifications bug
 
-        String texte = sharedPreferences.getString("lit", null);
-        assert texte != null;
-        if (!texte.equals("")) {
-            notif_lit.setVisibility(View.VISIBLE);
-        } else {
-            notif_lit.setVisibility(View.GONE);
+        if (sharedPreferences.contains("lit")) {
+            String texte = sharedPreferences.getString("lit", null); //On recupere le texte de la key "lit"
+            assert texte != null;
+            if (!texte.equals("")) {
+                notif_lit.setVisibility(View.VISIBLE); // Si le texte est different de vide, on affiche la notification
+            } else {
+                notif_lit.setVisibility(View.GONE); // Si le texte est vide, on fait disparaitre la notification
+            }
         }
-
-        String texte1 = sharedPreferences.getString("fenetre", null);
-        assert texte1 != null;
-        if (!texte1.equals("")) {
-            notif_fen_2.setVisibility(View.VISIBLE);
-        } else {
-            notif_fen_2.setVisibility(View.GONE);
+        if (sharedPreferences.contains("fenetre")) {
+            String texte1 = sharedPreferences.getString("fenetre", null);
+            assert texte1 != null;
+            if (!texte1.equals("")) {
+                notif_fen_2.setVisibility(View.VISIBLE);
+            } else {
+                notif_fen_2.setVisibility(View.GONE);
+            }
         }
-
-        String texte2 = sharedPreferences.getString("tableau", null);
-        assert texte2 != null;
-        if (!texte2.equals("")) {
-            notif_tab.setVisibility(View.VISIBLE);
-        } else {
-            notif_tab.setVisibility(View.GONE);
+        if (sharedPreferences.contains("tableau")) {
+            String texte2 = sharedPreferences.getString("tableau", null);
+            assert texte2 != null;
+            if (!texte2.equals("")) {
+                notif_tab.setVisibility(View.VISIBLE);
+            } else {
+                notif_tab.setVisibility(View.GONE);
+            }
         }
     }
 
@@ -180,28 +184,32 @@ public class Chambre extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
 
-        String texte = sharedPreferences.getString("lit", null);
-        assert texte != null;
-        if (!texte.equals("")) {
-            notif_lit.setVisibility(View.VISIBLE);
-        } else {
-            notif_lit.setVisibility(View.GONE);
+        if (sharedPreferences.contains("lit")) {
+            String texte = sharedPreferences.getString("lit", null); //On recupere le texte de la key "lit"
+            assert texte != null;
+            if (!texte.equals("")) {
+                notif_lit.setVisibility(View.VISIBLE); // Si le texte est different de vide, on affiche la notification
+            } else {
+                notif_lit.setVisibility(View.GONE); // Si le texte est vide, on fait disparaitre la notification
+            }
         }
-
-        String texte1 = sharedPreferences.getString("fenetre", null);
-        assert texte1 != null;
-        if (!texte1.equals("")) {
-            notif_fen_2.setVisibility(View.VISIBLE);
-        } else {
-            notif_fen_2.setVisibility(View.GONE);
+        if (sharedPreferences.contains("fenetre")) {
+            String texte1 = sharedPreferences.getString("fenetre", null);
+            assert texte1 != null;
+            if (!texte1.equals("")) {
+                notif_fen_2.setVisibility(View.VISIBLE);
+            } else {
+                notif_fen_2.setVisibility(View.GONE);
+            }
         }
-
-        String texte2 = sharedPreferences.getString("tableau", null);
-        assert texte2 != null;
-        if (!texte2.equals("")) {
-            notif_tab.setVisibility(View.VISIBLE);
-        } else {
-            notif_tab.setVisibility(View.GONE);
+        if (sharedPreferences.contains("tableau")) {
+            String texte2 = sharedPreferences.getString("tableau", null);
+            assert texte2 != null;
+            if (!texte2.equals("")) {
+                notif_tab.setVisibility(View.VISIBLE);
+            } else {
+                notif_tab.setVisibility(View.GONE);
+            }
         }
     }
 }
