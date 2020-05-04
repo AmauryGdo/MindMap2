@@ -1,22 +1,22 @@
 package com.example.anais.test;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
+//import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
+//import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 // Il y a beaucoup de répétition dans notre code j'ai donc choisi de commenter Chambre, Main Activité, Choix Pièce et Ecrire
 public class ChambreAnglais extends AppCompatActivity {
 
-    ImageView notif_bed;
+   /* ImageView notif_bed;
     ImageView notif_win_2;
     ImageView notif_board;
     SharedPreferences sharedPreferencesanglais;
-
+*/
     @Override
     // Dans le code qui suit nous établissons une action sur les Relative Layout
     protected void onCreate(Bundle savedInstanceState) {
@@ -96,7 +96,7 @@ public class ChambreAnglais extends AppCompatActivity {
         }
 
         //==================================== Detecteur de note a la création ==============================================================
-        notif_bed = findViewById(R.id.notif_bed); //association variable/image
+        /*notif_bed = findViewById(R.id.notif_bed); //association variable/image
         notif_win_2 = findViewById(R.id.notif_win_2);
         notif_board = findViewById(R.id.notif_board);
 
@@ -127,7 +127,7 @@ public class ChambreAnglais extends AppCompatActivity {
         }
         else {
             notif_board.setVisibility(View.GONE);
-        }
+        }*/
     }
 
     @Override
@@ -145,7 +145,7 @@ public class ChambreAnglais extends AppCompatActivity {
         //Il y avait une inconsistance des notifications lors du passage d'une orientation à une autre
         //Si on modifiait les notes et que l'on revenait à l'orientation précedente, les notifications bug
 
-        String texte = sharedPreferencesanglais.getString("bed", null); //On recupere le texte de la key "lit"
+       /* String texte = sharedPreferencesanglais.getString("bed", null); //On recupere le texte de la key "lit"
         assert texte != null;
         if (!texte.equals("")) {
             notif_bed.setVisibility(View.VISIBLE); // Si le texte est different de vide, on affiche la notification
@@ -171,12 +171,12 @@ public class ChambreAnglais extends AppCompatActivity {
         else {
             notif_board.setVisibility(View.GONE);
         }
-
+*/
     }
 
     //----------------------------- Detecteur de note en continu----------------------------------------------------------------
     // Ce callback permet de refresh l'etat des notifications pendant que l'activité est ouverte
-    @Override
+   /* @Override
     protected void onResume() {
         super.onResume();
 
@@ -206,5 +206,5 @@ public class ChambreAnglais extends AppCompatActivity {
         else {
             notif_board.setVisibility(View.GONE);
         }
-    }
+    }*/
 }
