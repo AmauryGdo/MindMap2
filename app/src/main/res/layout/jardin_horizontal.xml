@@ -27,7 +27,15 @@
         android:layout_marginTop="234dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
+        <ImageView
+            android:id="@+id/notif_table"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:adjustViewBounds="false"
+            android:contentDescription="@string/notification"
+            android:visibility="gone"
+            app:srcCompat="@drawable/notification"
+            />
     </RelativeLayout>
 
     <RelativeLayout
@@ -38,7 +46,15 @@
         android:layout_marginTop="107dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
+        <ImageView
+            android:id="@+id/notif_hamac"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:adjustViewBounds="false"
+            android:contentDescription="@string/notification"
+            android:visibility="gone"
+            app:srcCompat="@drawable/notification"
+            />
     </RelativeLayout>
 
     <RelativeLayout
@@ -49,7 +65,15 @@
         android:layout_marginTop="128dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
+        <ImageView
+            android:id="@+id/notif_fleur"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:adjustViewBounds="false"
+            android:contentDescription="@string/notification"
+            android:visibility="gone"
+            app:srcCompat="@drawable/notification"
+            />
     </RelativeLayout>
 
     <RelativeLayout
@@ -60,6 +84,14 @@
         android:layout_marginTop="79dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
+        <ImageView
+            android:id="@+id/notif_buisson"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:adjustViewBounds="false"
+            android:contentDescription="@string/notification"
+            android:visibility="gone"
+            app:srcCompat="@drawable/notification"
+            />
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
